@@ -11,3 +11,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.oswald-geral {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lexend-geral {
+  font-family: "Lexend", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.oswald-plus {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-style: normal;
+}
+
+.lexend-plus {
+  font-family: "Lexend", serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-style: normal;
+}
