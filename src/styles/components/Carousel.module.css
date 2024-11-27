@@ -1,7 +1,7 @@
 :root{
   --width: 100%;
   --height: 70vh;
-  --slides-qt: 4;
+  --slides-qt: 8;
 }
 
 .carouselText{
@@ -13,7 +13,7 @@
   top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1000;
+  z-index: 999;
 }
 
 .carousel{
@@ -26,7 +26,7 @@
 }
 
 .carouselWrapper{
-  width: calc(var(--width) * 4);
+  width: calc(var(--width) * var(--slides-qt));
   height: var(--height);
   overflow: hidden;
   display: flex;
@@ -37,11 +37,5 @@
 .carouselImage{
   background-size: contain;
   background-repeat: repeat-x;
-  animation: loop 5s infinite forwards;
-}
-
-@keyframes loop {
-  100%{
-    transform: translateX(calc(-1 * var(--width)));
-  }
+  transition: transform 3s ease-in-out;
 }

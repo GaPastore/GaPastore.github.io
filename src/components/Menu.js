@@ -13,6 +13,7 @@ function Menu(){
 
     return(
         <div>
+            <div className={`${styles.menuBg} ${menuHidden ? styles.visible : ''}`}></div>
             <div className={`${styles.menuBox} ${menuHidden ? styles.visible : ''}`}>
                 <div className={`${classesText} ${menuHidden ? styles.visible : ''}`}>PÁGINA INICIAL</div>
                 <div className={`${classesText} ${menuHidden ? styles.visible : ''}`}>PROJETOS EM AUDIOVISUAL</div>

@@ -17,6 +17,7 @@
     height: 100%;
     align-items: center;
     align-content: center;
+    z-index: 1000;
 }
 
 .menuText{
@@ -25,18 +26,34 @@
     font-size: 4rem;
     text-align: center;
     color: #69007900;
+    z-index: 1000;
 }
 
-.menuBox,.menuText{
+.menuBox, .menuText, .menuBg{
     -webkit-transition: all .7s ease-out;
     -moz-transition: all .7s ease-out;
     -o-transition: all .7s ease-out;
     transition: all .7s ease-out;
     visibility: hidden;
+    z-index: 1000;
 }
 
 .menuBox.visible, .menuText.visible{
     backdrop-filter: blur(20px);
     visibility: visible;
     color: #690079;
+    z-index: 1000;
+}
+
+.menuBg{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: #ffffff00;
+}
+
+.menuBg.visible{
+    background-color: #ffffff71;
+    visibility: visible;
 }
