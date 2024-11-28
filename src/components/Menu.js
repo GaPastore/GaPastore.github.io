@@ -9,7 +9,7 @@ function Menu(){
         setMenuHidden(!menuHidden);
     };
 
-    const classesText = styles.menuText + " oswald-plus";
+    const classesText = styles.menuText + " oswald-geral";
 
     return(
         <div>

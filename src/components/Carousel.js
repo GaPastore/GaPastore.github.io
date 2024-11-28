@@ -19,46 +19,30 @@ function Carousel(){
       {
         id: 4,
         content: 'https://picsum.photos/seed/4/200/300'
+      },
+      {
+        id: 5,
+        content: '../../public/4kImageColored.jpg'
       }
     ];
-
-    const elem = document.getElementsByClassName(styles.carouselImage);
-
-    useEffect(() => {
-      
-      let count = 1;
-
-      setInterval(() => {
-
-        for(let i = 0; i <= 7; i++){
-
-          const elemRect = elem[i].getBoundingClientRect()
-          elem[i].style.transform = "translateX(-" + elemRect.width * count + "px)"
-          console.log(elem[i].style.transform)
-
-        }
-
-        count= (count + 1) % 4;
-        console.log(count)
-
-      }, 6000)
-
-    })
 
     return(
         <div>
             <div className={styles.carousel}>
-                <div className={styles.carouselText + " oswald-geral"}>BEM-VINDO</div>
+                <div className={styles.carouselText + " oswald-plus"}>BEM-VINDO</div>
+                <div className={styles.vignette}></div>
                 <div className={styles.carouselWrapper}>
             
                       <div className={styles.carouselImage} style={{backgroundImage: `url(${urls[0].content})`}}></div>
                       <div className={styles.carouselImage} style={{backgroundImage: `url(${urls[1].content})`}}></div>
                       <div className={styles.carouselImage} style={{backgroundImage: `url(${urls[2].content})`}}></div>
                       <div className={styles.carouselImage} style={{backgroundImage: `url(${urls[3].content})`}}></div>
+                      <div className={styles.carouselImage} style={{backgroundImage: `url(${urls[4].content})`}}></div>
                       <div className={styles.carouselImage} style={{backgroundImage: `url(${urls[0].content})`}}></div>
                       <div className={styles.carouselImage} style={{backgroundImage: `url(${urls[1].content})`}}></div>
                       <div className={styles.carouselImage} style={{backgroundImage: `url(${urls[2].content})`}}></div>
                       <div className={styles.carouselImage} style={{backgroundImage: `url(${urls[3].content})`}}></div>
+                      <div className={styles.carouselImage} style={{backgroundImage: `url(${urls[4].content})`}}></div>
 
                 </div>
 

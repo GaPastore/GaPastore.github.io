@@ -22,14 +22,14 @@ code {
 .lexend-geral {
   font-family: "Lexend", serif;
   font-optical-sizing: auto;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
 }
 
 .oswald-plus {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 350;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -38,4 +38,12 @@ code {
   font-optical-sizing: auto;
   font-weight: 350;
   font-style: normal;
+}
+
+.lexend-plus, .oswald-plus{
+  letter-spacing: 1.2rem;
+}
+
+.oswald-geral, .lexend-geral{
+  letter-spacing: 0.8rem;
 }

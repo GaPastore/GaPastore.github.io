@@ -5,7 +5,7 @@ function Home(){
     return (
         <div>
             <Carousel/>
-            <div className={styles.title + " oswald-geral"}>PORTFOLIO</div>
+            <div className={styles.title + " oswald-plus"}>PORTFOLIO</div>
         </div>
     )
 }
