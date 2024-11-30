@@ -25,8 +25,8 @@
   z-index: 998;
   width: var(--width);
   height: var(--height);
-  background-color: #ffffff25;
-  box-shadow: 0 0 200px 200px #ffffff88 inset;
+  background-color: rgba(255,255,255,.2);
+  box-shadow: 0 0 200px 200px rgba(255,255,255,.7) inset;
 }
 
 .carousel, .carouselImage{
@@ -51,7 +51,7 @@
 
 .carouselWrapper{
   width: calc(var(--width) * var(--slides-qt));
-  animation: scroll 20s ease-in-out infinite;
+  animation: scroll 30s ease-in-out infinite;
   height: var(--height);
   overflow: hidden;
   display: flex;
@@ -62,4 +62,15 @@
 .carouselImage{
   background-size: contain;
   background-repeat: repeat-x;
+}
+
+
+@media screen and (prefers-color-scheme: dark) {
+  .carouselText {
+      color: #D5FFA9;
+  }
+  .vignette {
+    background-color: rgba(0,0,0,.2);
+    box-shadow: 0 0 200px 200px rgba(0,0,0,.7) inset;
+  }
 }

@@ -1,5 +1,5 @@
 .menuBt{
-    background: url("../../../public/Menu.svg");
+    background: url("../../../public/MenuLight.svg");
     position: fixed;
     width: 7rem;
     height: 7rem;
@@ -53,10 +53,22 @@
     width: 100%;
     height: 100%;
     z-index: 999;
-    background-color: #ffffff00;
+    background-color: rgba(255,255,255,0);
 }
 
 .menuBg.visible{
-    background-color: #ffffff71;
+    background-color: rgba(255,255,255,.7);
     visibility: visible;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    .menuBt {
+        background-image: url('../../../public/MenuDark.svg');
+    }
+    .menuBg.visible {
+        background-color: rgba(0,0,0,.7);
+    }
+    .menuBox.visible, .menuText.visible {
+        color: #8BCD45;
+    }
 }

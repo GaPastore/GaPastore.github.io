@@ -47,3 +47,9 @@ code {
 .oswald-geral, .lexend-geral{
   letter-spacing: 0.8rem;
 }
+
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    background-color: #101010;
+  }
+}
