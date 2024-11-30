@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import styles from '../styles/components/Carousel.module.css'
+import BgOne from '../assets/background/4kImageColored.jpg'
 
 function Carousel(){
 
@@ -22,7 +23,7 @@ function Carousel(){
       },
       {
         id: 5,
-        content: '../../public/4kImageColored.jpg'
+        content: BgOne
       }
     ];
 

@@ -5,3 +5,9 @@
     text-align: center;
     color: #690079;
 }
+
+@media screen and (prefers-color-scheme: dark) {
+    .title{
+        color: #8BCD45;
+    }
+}
