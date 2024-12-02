@@ -1,0 +1,25 @@
+.slider{
+    width: 100%;
+    height: 50rem;
+    overflow: hidden;
+    align-items: center;
+    position: relative;
+}
+
+.sliderBox{
+    position: absolute;
+    width: 200%;
+    height: 50rem;
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    overflow: hidden;
+    margin-left: -14%;
+}
+
+.sliderContent{
+    width: 600px;
+    height: 600px;
+    background-color: red;
+    margin-right: 10rem;
+}

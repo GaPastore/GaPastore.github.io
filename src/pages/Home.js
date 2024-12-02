@@ -1,4 +1,5 @@
 import Carousel from '../components/Carousel';
+import ContentSlider from '../components/ContentSlider';
 import styles from '../styles/pages/Home.module.css';
 
 function Home(){
@@ -6,6 +7,7 @@ function Home(){
         <div>
             <Carousel/>
             <div className={styles.title + " oswald-plus"}>PORTFOLIO</div>
+            <ContentSlider/>
         </div>
     )
 }
