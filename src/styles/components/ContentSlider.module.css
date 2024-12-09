@@ -7,19 +7,19 @@
 
 .sliderBox{
     position: relative;
-    width: 200%;
+    width: 500%;
     height: 600px;
     display: flex;
     align-items: stretch;
     padding-bottom: 5rem;
     flex-direction: row;
     overflow: hidden;
+    transition: transform 1s ease-in-out;
 }
 
 .sliderContent{
     width: 600px;
     height: 600px;
-    background-color: red;
     margin: 0 5rem;
 }
 
