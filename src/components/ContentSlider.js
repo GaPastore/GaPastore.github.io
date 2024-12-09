@@ -1,31 +1,26 @@
 import useState from 'react-usestateref';
 import styles from "../styles/components/ContentSlider.module.css"
 
-function ContentSlider(){
+function ContentSlider() {
 
     const [currentIndex, setCurrentIndex, indexRef] = useState(0);
 
-    const items = [
-        {
-            id: 1,
-            content: "teste1"
-        },
-        {
-            id: 2,
-            content: "teste2"
-        },
-        {
-            id: 3,
-            content: "teste3"
-        }
-    ]
+    const div = document.getElementsByClassName(styles.sliderBox);
+    const slide = document.getElementsByClassName(styles.sliderContent);
+
+    function changePos() {
+        div[0].style.transform = "translateX(-" + ((currentIndex+1) * slide[0].style.width) +"px)"
+    }
 
     const nextItem = () => {
-        setCurrentIndex((currentIndex + 1) % items.length);
+        setCurrentIndex((currentIndex + 1) % slide.length);
+        console.log(slide[0].style)
+        changePos()
       };
     
     const prevItem = () => {
-        setCurrentIndex((currentIndex - 1 + items.length) % items.length);
+        setCurrentIndex((currentIndex - 1 + slide.length) % slide.length);
+        changePos()
       };
 
     return(
