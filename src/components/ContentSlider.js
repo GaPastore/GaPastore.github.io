@@ -1,46 +1,81 @@
 import useState from 'react-usestateref';
+import { useRef } from 'react';
 import styles from "../styles/components/ContentSlider.module.css"
 
 function ContentSlider() {
 
-    const [currentIndex, setCurrentIndex, indexRef] = useState(0);
+    const [nIndex, setnIndex, indexRef] = useState(0);
+    
+    const divRef = useRef();
 
-    const div = document.getElementsByClassName(styles.sliderBox);
     const slide = document.getElementsByClassName(styles.sliderContent);
-
-    function changePos() {
-        div[0].style.transform = "translateX(calc(-" + ((indexRef.current) * (slide[0].clientWidth)) +"px - 10rem))"
-    }
-
-    const nextItem = () => {
-        setCurrentIndex((currentIndex + 1) % ((slide.length / 2) + 1));
-        console.log(indexRef.current + 1)
-        changePos()
-      };
+    const leftBt = document.getElementById(styles.leftButton);
+    const rightBt = document.getElementById(styles.rightButton);
+    const root = document.querySelector(':root')
     
     const prevItem = () => {
-        setCurrentIndex((currentIndex - 1 + slide.length) % (slide.length / 2));
-        console.log(indexRef.current + 1)
-        changePos()
-      };
+
+            console.log(divRef)
+
+            divRef.current.setAttribute('data-animation', 'anim-slider-2')
+            divRef.current.style.animationPlayState = 'running'
+            divRef.current.onClick = null
+            setnIndex((nIndex) => (nIndex + 2) % slide.length)
+
+            setTimeout(() => {
+                divRef.current.removeAttribute('data-animation')
+                divRef.current.style.animationPlayState = 'paused'
+                divRef.current.onClick = {prevItem}
+                root.style.setProperty('--seconds', (indexRef.current * 10) + '%')
+                root.style.setProperty('--anim-name', 'anim-slider-2')
+            }, 2000)
+
+            console.log(divRef.current)
+
+    };
+
+    const nextItem = () => {
+
+        console.log(divRef)
+
+        divRef.current.setAttribute('data-animation-next', 'anim-slider-1')
+        root.style.setProperty('--anim-name', divRef.current.getAttribute('data-animation'))
+        divRef.current.style.animationPlayState = 'running'
+        divRef.current.onClick = null
+        setnIndex((nIndex) => (nIndex - 2 + slide.length) % slide.length)
+
+        setTimeout(() =>{
+            divRef.current.removeAttribute('data-animation')
+            divRef.current.style.animationPlayState = 'paused'
+            divRef.current.onClick = {nextItem}
+            root.style.setProperty('--seconds', (indexRef.current * 10) + '%')
+        }, 2000)
+
+        console.log(divRef.current)
+
+    };
+
+    
 
     return(
         <div>
             <div className={styles.slider}>
-                <div className={styles.sliderBox}>
+                <div ref={divRef} id={styles.sliderBox}>
                     <div className={styles.sliderContent} style={{backgroundColor: 'red'}}></div>
                     <div className={styles.sliderContent} style={{backgroundColor: 'green'}}></div>
                     <div className={styles.sliderContent} style={{backgroundColor: 'white'}}></div>
                     <div className={styles.sliderContent} style={{backgroundColor: 'blue'}}></div>
+                    <div className={styles.sliderContent} style={{backgroundColor: 'purple'}}></div>
                     <div className={styles.sliderContent} style={{backgroundColor: 'red'}}></div>
                     <div className={styles.sliderContent} style={{backgroundColor: 'green'}}></div>
                     <div className={styles.sliderContent} style={{backgroundColor: 'white'}}></div>
                     <div className={styles.sliderContent} style={{backgroundColor: 'blue'}}></div>
+                    <div className={styles.sliderContent} style={{backgroundColor: 'purple'}}></div>
                 </div>
                 <div className={styles.buttonBox}>
-                    <div onClick={prevItem} className={styles.leftButton}></div>
-                    <div className={styles.openButton}></div>
-                    <div onClick={nextItem} className={styles.rightButton}></div>
+                    <div onClick={prevItem} id={styles.leftButton}></div>
+                    <div id={styles.openButton}></div>
+                    <div onClick={nextItem} id={styles.rightButton}></div>
                 </div>
             </div>
         </div>
