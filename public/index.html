@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" id="faviconID" href="%PUBLIC_URL%/favlight.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -14,6 +14,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <title>Portfólio Gabriel Pastore</title>
   </head>
+  <script>
+
+    const faviconTag = document.getElementById("faviconID");
+    const isDark = window.matchMedia("(prefers-color-scheme: dark)");
+    
+    const changeFavicon = () => {
+      if (isDark.matches) {
+        faviconTag.href = "%PUBLIC_URL%/favdark.svg";
+      }
+      else {
+        faviconTag.href = "%PUBLIC_URL%/favlight.svg";
+      }
+    };
+
+    setInterval(changeFavicon, 5000)
+
+  </script>
   <body>
     <div id="root"></div>
   </body>

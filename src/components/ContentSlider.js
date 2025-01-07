@@ -12,22 +12,30 @@ function ContentSlider() {
     const leftBt = document.getElementById(styles.leftButton);
     const rightBt = document.getElementById(styles.rightButton);
     const root = document.querySelector(':root')
-    
+
+    var percent = 0
+
     const prevItem = () => {
 
             console.log(divRef)
 
-            divRef.current.setAttribute('data-animation', 'anim-slider-2')
+            percent = nIndex + 2
+            if(percent <= 0){
+                percent = 10
+            }
+            if(divRef.current.style.animationDirection == 'normal'){
+                divRef.current.style.animationDelay = '-' + percent + 's'
+            }
+            divRef.current.style.animationDirection = 'reverse'
             divRef.current.style.animationPlayState = 'running'
-            divRef.current.onClick = null
-            setnIndex((nIndex) => (nIndex + 2) % slide.length)
+            divRef.current.disabled = true
+            setnIndex((nIndex) => (nIndex - 2 + slide.length) % slide.length)
 
             setTimeout(() => {
-                divRef.current.removeAttribute('data-animation')
                 divRef.current.style.animationPlayState = 'paused'
-                divRef.current.onClick = {prevItem}
-                root.style.setProperty('--seconds', (indexRef.current * 10) + '%')
-                root.style.setProperty('--anim-name', 'anim-slider-2')
+                divRef.current.disabled = false
+                
+                console.log(percent)
             }, 2000)
 
             console.log(divRef.current)
@@ -38,17 +46,22 @@ function ContentSlider() {
 
         console.log(divRef)
 
-        divRef.current.setAttribute('data-animation-next', 'anim-slider-1')
-        root.style.setProperty('--anim-name', divRef.current.getAttribute('data-animation'))
+        percent = nIndex - 2
+        if(percent >= 10){
+            percent = 0
+        }
+        if(divRef.current.style.animationDirection == 'reverse'){
+            divRef.current.style.animationDelay = '-' + percent + 's'
+        }
+        divRef.current.style.animationDirection = 'normal'
         divRef.current.style.animationPlayState = 'running'
-        divRef.current.onClick = null
-        setnIndex((nIndex) => (nIndex - 2 + slide.length) % slide.length)
+        divRef.current.disabled = true
+        setnIndex((nIndex) => (nIndex + 2) % slide.length)
 
         setTimeout(() =>{
-            divRef.current.removeAttribute('data-animation')
             divRef.current.style.animationPlayState = 'paused'
-            divRef.current.onClick = {nextItem}
-            root.style.setProperty('--seconds', (indexRef.current * 10) + '%')
+            divRef.current.disabled = false
+            console.log(percent)
         }, 2000)
 
         console.log(divRef.current)

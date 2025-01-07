@@ -45,7 +45,7 @@
   60% { transform: translateX(calc(-1 * var(--width) / var(--slides-qt) * 3)); }
   70% { transform: translateX(calc(-1 * var(--width) / var(--slides-qt) * 4)); }
   80% { transform: translateX(calc(-1 * var(--width) / var(--slides-qt) * 4)); }
-	90% { transform: translateX(calc(-1 * var(--width) / 2)); }
+  90% { transform: translateX(calc(-1 * var(--width) / 2)); }
 	100% { transform: translateX(calc(-1 * var(--width) / 2)); }
 }
 
