@@ -11,26 +11,68 @@ function ContentSlider() {
 
     const slide = document.getElementsByClassName(styles.sliderContent);
 
+    window.onload = () => {
+        divRef.current.style.animationDelay = '0s'
+        divRef.current.style.animationDirection = 'normal'
+    }
+
+    const animReset = () => {
+        divRef.current.classList.remove(styles.animClass)
+        void divRef.current.offsetWidth
+        divRef.current.classList.add(styles.animClass)
+    }
+
+    const switchPrev = () => {
+        switch (nIndex){
+            case 0:
+                divRef.current.style.animationDelay = '0s'
+                break
+            case 2:
+                divRef.current.style.animationDelay = '-8s'
+                break
+            case 4:
+                divRef.current.style.animationDelay = '-6s'
+                break
+            case 6:
+                divRef.current.style.animationDelay = '-4s'
+                break
+            case 8:
+                divRef.current.style.animationDelay = '-2s'
+                break
+            case 10:
+                divRef.current.style.animationDelay = '0s'
+                break
+        }
+    }
+
+    const switchNext = () => {
+        switch (nIndex){
+            case 0:
+                divRef.current.style.animationDelay = '0s'
+                break
+            case 2:
+                divRef.current.style.animationDelay = '-2s'
+                break
+            case 4:
+                divRef.current.style.animationDelay = '-4s'
+                break
+            case 6:
+                divRef.current.style.animationDelay = '-6s'
+                break
+            case 8:
+                divRef.current.style.animationDelay = '-8s'
+                break
+            case 10:
+                divRef.current.style.animationDelay = '0s'
+                break
+        }
+    }
+
     const prevItem = () => {
 
-        if(divRef.current.style.animationDirection == 'reverse'){
-            switch (nIndex){
-                case 2:
-                    divRef.current.style.animationDelay = '-4s'
-                    break
-                case 4:
-                    divRef.current.style.animationDelay = '-2s'
-                    break
-                case 6:
-                    divRef.current.style.animationDelay = '0s'
-                    break
-                case 8:
-                    divRef.current.style.animationDelay = '-8s'
-                    break
-                case 10:
-                    divRef.current.style.animationDelay = '-6s'
-                    break
-            }
+        if(divRef.current.style.animationDirection === 'normal'){
+            animReset()
+            switchPrev()
         }
 
         divRef.current.style.animationDirection = 'reverse'
@@ -43,30 +85,15 @@ function ContentSlider() {
             divRef.current.style.pointerEvents = 'auto'
             setnIndex((nIndex) => (nIndex - 2 + slide.length) % slide.length)
             setDisabled(false)
-        }, 2000)
+        }, 1995)
 
     };
 
     const nextItem = () => {
 
-        if(divRef.current.style.animationDirection == 'normal'){
-            switch (nIndex){
-                case 2:
-                    divRef.current.style.animationDelay = '0s'
-                    break
-                case 4:
-                    divRef.current.style.animationDelay = '-2s'
-                    break
-                case 6:
-                    divRef.current.style.animationDelay = '-4s'
-                    break
-                case 8:
-                    divRef.current.style.animationDelay = '-6s'
-                    break
-                case 10:
-                    divRef.current.style.animationDelay = '-8s'
-                    break
-            }
+        if(divRef.current.style.animationDirection === 'reverse'){
+            animReset()
+            switchNext()
         }
 
         divRef.current.style.animationDirection = 'normal'
@@ -79,7 +106,7 @@ function ContentSlider() {
             divRef.current.style.pointerEvents = 'auto'
             setnIndex((nIndex) => (nIndex + 2) % slide.length)
             setDisabled(false)
-        }, 2000)
+        }, 1995)
 
     };
 
@@ -88,7 +115,7 @@ function ContentSlider() {
     return(
         <div>
             <div className={styles.slider}>
-                <div ref={divRef} id={styles.sliderBox}>
+                <div ref={divRef} className={styles.sliderBox + " " + styles.animClass}>
                     <div className={styles.sliderContent} style={{backgroundColor: 'red'}}></div>
                     <div className={styles.sliderContent} style={{backgroundColor: 'green'}}></div>
                     <div className={styles.sliderContent} style={{backgroundColor: 'white'}}></div>

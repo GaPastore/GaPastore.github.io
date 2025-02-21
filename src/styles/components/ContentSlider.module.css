@@ -12,7 +12,7 @@
     position: relative;
 }
 
-#sliderBox{
+.sliderBox{
     position: relative;
     width: calc(var(--width-slider) * var(--slides-qt-slider));
     height: 600px;
@@ -21,6 +21,9 @@
     padding-bottom: 5rem;
     flex-direction: row;
     overflow: hidden;
+}
+
+.animClass{
     transition: transform 2s;
     animation: anim-slider-1 ease-in-out 10s infinite normal forwards;
     animation-play-state: paused;
