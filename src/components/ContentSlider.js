@@ -16,139 +16,72 @@ function ContentSlider() {
         slide[value].classList.add(styles.inactive)
     }
 
-    function setActive(value) {
-        slide[value].classList.remove(styles.inactive)
-        slide[value].classList.add(styles.active)
+    function setActive(v1, v2) {
+        slide[v1].classList.remove(styles.inactive)
+        slide[v1].classList.add(styles.active)
+        slide[v2].classList.remove(styles.inactive)
+        slide[v2].classList.add(styles.active)
     }
 
     const varSlide = () => {
+
         for(let i = 0; i < slide.length; i++) {
             setInactive(i)
         }
-        if(divRef.current.classList.contains('next')){
-            switch(nIndex) {
-                case 0:
-                    setActive(2)
-                    setActive(7)
-                    break
-                case 2:
-                    setActive(3)
-                    setActive(8)
-                    break
-                case 4:
-                    setActive(4)
-                    setActive(9)
-                    break
-                case 6:
-                    setActive(0)
-                    setActive(5)
-                    break
-                case 8:
-                    setActive(1)
-                    setActive(6)
-                    break
-                case 10:
-                    setActive(2)
-                    setActive(7)
-                    break
-                case null:
-                    setActive(1)
-                    setActive(6)
-                    break
+
+        if(divRef.current.classList.contains('next')) {
+
+            if(nIndex === null) {
+                setActive(1, 6)
             }
-        }
-        else if(divRef.current.classList.contains('prev')){
-            switch(nIndex) {
-                case 0:
-                    setActive(0)
-                    setActive(5)
-                    break
-                case 2:
-                    setActive(1)
-                    setActive(6)
-                    break
-                case 4:
-                    setActive(2)
-                    setActive(7)
-                    break
-                case 6:
-                    setActive(3)
-                    setActive(8)
-                    break
-                case 8:
-                    setActive(4)
-                    setActive(9)
-                    break
-                case 10:
-                    setActive(0)
-                    setActive(5)
-                    break
-                case null:
-                    setActive(4)
-                    setActive(9)
-                    break
+            else {
+                var v1 = (((nIndex % 10) / 2) + 2) % 5
+                var v2 = ((((nIndex % 10) / 2) + 2) % 5) + 5
+
+                setActive(v1, v2)
             }
+
         }
+        else if(divRef.current.classList.contains('prev')) {
+            
+            if(nIndex === null) {
+                setActive(4, 9)
+            }
+            else {
+                var v1 = (nIndex % 10) / 2
+                var v2 = ((nIndex % 10) / 2) + 5  
+
+                setActive(v1, v2)
+            }
+
+        }
+        
     }
 
     window.onload = () => {
+
         divRef.current.style.animationDelay = '0s'
         divRef.current.style.animationDirection = 'normal'
         divRef.current.classList.add('next')
         varSlide()
-        setnIndex((nIndex) => 0)
+        setnIndex(0)
+        
     }
 
     const animReset = () => {
+
         divRef.current.classList.remove(styles.animClass)
         void divRef.current.offsetWidth
         divRef.current.classList.add(styles.animClass)
+
     }
 
     const switchPrev = () => {
-        switch (nIndex){
-            case 0:
-                divRef.current.style.animationDelay = '-1s'
-                break
-            case 2:
-                divRef.current.style.animationDelay = '-9s'
-                break
-            case 4:
-                divRef.current.style.animationDelay = '-7s'
-                break
-            case 6:
-                divRef.current.style.animationDelay = '-5s'
-                break
-            case 8:
-                divRef.current.style.animationDelay = '-3s'
-                break
-            case 10:
-                divRef.current.style.animationDelay = '-1s'
-                break
-        }
+        divRef.current.style.animationDelay = '-' + (((10 - nIndex) % 10) + 1) + 's'
     }
 
     const switchNext = () => {
-        switch (nIndex){
-            case 0:
-                divRef.current.style.animationDelay = '0s'
-                break
-            case 2:
-                divRef.current.style.animationDelay = '-2s'
-                break
-            case 4:
-                divRef.current.style.animationDelay = '-4s'
-                break
-            case 6:
-                divRef.current.style.animationDelay = '-6s'
-                break
-            case 8:
-                divRef.current.style.animationDelay = '-8s'
-                break
-            case 10:
-                divRef.current.style.animationDelay = '0s'
-                break
-        }
+        divRef.current.style.animationDelay = '-' + (nIndex % 10) + 's'
     }
 
     const prevItem = () => {
@@ -166,7 +99,6 @@ function ContentSlider() {
         divRef.current.style.animationDirection = 'reverse'
         divRef.current.style.animationPlayState = 'running'
         setDisabled(true)
-        console.log(nIndex)
 
         setTimeout(() => {
             divRef.current.style.animationPlayState = 'paused'
@@ -192,9 +124,8 @@ function ContentSlider() {
         divRef.current.style.animationDirection = 'normal'
         divRef.current.style.animationPlayState = 'running'
         setDisabled(true)
-        console.log(nIndex)
 
-        setTimeout(() =>{
+        setTimeout(() => {
             divRef.current.style.animationPlayState = 'paused'
             divRef.current.style.pointerEvents = 'auto'
             setnIndex((nIndex) => (nIndex + 2) % slide.length)
@@ -203,22 +134,40 @@ function ContentSlider() {
 
     };
 
-    
-
     return(
         <div>
             <div className={styles.slider}>
                 <div ref={divRef} className={styles.sliderBox + " " + styles.animClass}>
-                    <div className={styles.sliderContent} style={{backgroundColor: 'red'}}></div>
-                    <div className={styles.sliderContent} style={{backgroundColor: 'green'}}></div>
-                    <div className={styles.sliderContent} style={{backgroundColor: 'white'}}></div>
-                    <div className={styles.sliderContent} style={{backgroundColor: 'blue'}}></div>
-                    <div className={styles.sliderContent} style={{backgroundColor: 'purple'}}></div>
-                    <div className={styles.sliderContent} style={{backgroundColor: 'red'}}></div>
-                    <div className={styles.sliderContent} style={{backgroundColor: 'green'}}></div>
-                    <div className={styles.sliderContent} style={{backgroundColor: 'white'}}></div>
-                    <div className={styles.sliderContent} style={{backgroundColor: 'blue'}}></div>
-                    <div className={styles.sliderContent} style={{backgroundColor: 'purple'}}></div>
+                    <div className={styles.sliderContent}>
+                        <div className={styles.sliderInside} data-index="0"></div>
+                    </div>
+                    <div className={styles.sliderContent}>
+                        <div className={styles.sliderInside} data-index="1"></div>
+                    </div>
+                    <div className={styles.sliderContent}>
+                        <div className={styles.sliderInside} data-index="2"></div>
+                    </div>
+                    <div className={styles.sliderContent}>
+                        <div className={styles.sliderInside} data-index="3"></div>
+                    </div>
+                    <div className={styles.sliderContent}>
+                        <div className={styles.sliderInside} data-index="4"></div>
+                    </div>
+                    <div className={styles.sliderContent}>
+                        <div className={styles.sliderInside} data-index="5"></div>
+                    </div>
+                    <div className={styles.sliderContent}>
+                        <div className={styles.sliderInside} data-index="6"></div>
+                    </div>
+                    <div className={styles.sliderContent}>
+                        <div className={styles.sliderInside} data-index="7"></div>
+                    </div>
+                    <div className={styles.sliderContent}>
+                        <div className={styles.sliderInside} data-index="8"></div>
+                    </div>
+                    <div className={styles.sliderContent}>
+                        <div className={styles.sliderInside} data-index="9"></div>
+                    </div>
                 </div>
                 <div className={styles.buttonBox}>
                     <div onClick={disabled ? () => {} : prevItem} id={styles.leftButton}></div>
