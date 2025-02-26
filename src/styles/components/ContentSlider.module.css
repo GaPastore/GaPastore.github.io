@@ -33,6 +33,7 @@
 .sliderContent{
     width: 100%;
     aspect-ratio: 1 / 1;
+    position: relative;
     margin: 0 3rem;
     transition: opacity 1s, aspect-ratio 1s, background-image 1s;
     background-image: url('../../assets/slider/no-overlay.png');
@@ -40,12 +41,15 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     border-radius: 5rem;
+    justify-items:end;
 }
 
 .active:hover{
     width: 100%;
     aspect-ratio: 3.06 / 2;
-    background-image: url('../../assets/slider/purple-overlay.png');
+    .sliderOverlay, .sliderInside {
+        opacity: 1;
+    }
 }
 
 .inactive{
@@ -82,34 +86,53 @@
 	100% { transform: translateX(calc(-1 * var(--width-slider) / var(--slides-qt-slider) * 2.75)); }
 }
 
-.sliderInside {
-    width: 100%;
-    height: 100%;
+.sliderInside, .sliderOverlay{
     border-radius: 5rem;
+    overflow: hidden;
+    opacity: 0;
+    z-index: 2;
+    transition: opacity 1s;
 }
 
-[data-index]{
+.sliderInside {
+    width: 40%;
+    height: 80%;
+    font-size: 1rem;
+    letter-spacing: .5rem;
+    color: #101010;
     position: relative;
-    z-index: -1;
+    padding: 2rem;
+    text-align: right;
+    text-overflow: clip;
 }
+
+.sliderOverlay {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/slider/purple-overlay.png');
+    background-size: contain;
+    position: absolute;
+    z-index: 1;
+}
+
 [data-index="0"], [data-index="5"] {
-    background-color: green;
+    background-image: url('../../assets/background/4kImageBlue.jpg');
 }
 [data-index="1"], [data-index="6"] {
-    background-color: red;
+    background-image: url('../../assets/background/4kImageColored.jpg');
 }
 [data-index="2"], [data-index="7"] {
-    background-color: blue;
+    background-image: url('../../assets/background/exampleImageBW.jpg');
 }
 [data-index="3"], [data-index="8"] {
-    background-color: purple;
+    background-image: url('../../assets/background/exampleImageColored.png');
 }
 [data-index="4"], [data-index="9"] {
-    background-color: white;
+    background-image: url('../../../public/favlight.svg');
 }
 
 @media screen and (prefers-color-scheme: dark) {
-    .active:hover {
+    .sliderOverlay {
         background-image: url('../../assets/slider/green-overlay.png');
     }
 }

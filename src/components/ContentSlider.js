@@ -138,35 +138,125 @@ function ContentSlider() {
         <div>
             <div className={styles.slider}>
                 <div ref={divRef} className={styles.sliderBox + " " + styles.animClass}>
-                    <div className={styles.sliderContent}>
-                        <div className={styles.sliderInside} data-index="0"></div>
+                    <div className={styles.sliderContent} data-index="0">
+                        <div className={styles.sliderOverlay}></div>
+                        <div className={styles.sliderInside + " oswald-geral"}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum ante eget quam 
+                            condimentum pretium. Fusce aliquam fringilla dui ut venenatis. Mauris tristique 
+                            mattis ligula eu viverra. Morbi justo purus, luctus et imperdiet nec, accumsan in 
+                            ex. Donec ut nibh et risus consequat venenatis sed a est. In rhoncus, nunc at faucibus 
+                            pulvinar, ex nisl aliquet elit, eu porta nunc urna id urna. Fusce at ipsum euismod, 
+                            iaculis mauris id, facilisis turpis. Nulla ac dapibus quam, ut vulputate leo. Pellentesque 
+                            nec ultricies sem, et vulputate lacus. Cras at ultricies ipsum. Cras id consequat erat.
+                        </div>
                     </div>
-                    <div className={styles.sliderContent}>
-                        <div className={styles.sliderInside} data-index="1"></div>
+                    <div className={styles.sliderContent} data-index="1">
+                        <div className={styles.sliderOverlay}></div>
+                        <div className={styles.sliderInside  + " oswald-geral"}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum ante eget quam 
+                            condimentum pretium. Fusce aliquam fringilla dui ut venenatis. Mauris tristique 
+                            mattis ligula eu viverra. Morbi justo purus, luctus et imperdiet nec, accumsan in 
+                            ex. Donec ut nibh et risus consequat venenatis sed a est. In rhoncus, nunc at faucibus 
+                            pulvinar, ex nisl aliquet elit, eu porta nunc urna id urna. Fusce at ipsum euismod, 
+                            iaculis mauris id, facilisis turpis. Nulla ac dapibus quam, ut vulputate leo. Pellentesque 
+                            nec ultricies sem, et vulputate lacus. Cras at ultricies ipsum. Cras id consequat erat.
+                        </div>
                     </div>
-                    <div className={styles.sliderContent}>
-                        <div className={styles.sliderInside} data-index="2"></div>
+                    <div className={styles.sliderContent} data-index="2">
+                        <div className={styles.sliderOverlay}></div>
+                        <div className={styles.sliderInside  + " oswald-geral"}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum ante eget quam 
+                            condimentum pretium. Fusce aliquam fringilla dui ut venenatis. Mauris tristique 
+                            mattis ligula eu viverra. Morbi justo purus, luctus et imperdiet nec, accumsan in 
+                            ex. Donec ut nibh et risus consequat venenatis sed a est. In rhoncus, nunc at faucibus 
+                            pulvinar, ex nisl aliquet elit, eu porta nunc urna id urna. Fusce at ipsum euismod, 
+                            iaculis mauris id, facilisis turpis. Nulla ac dapibus quam, ut vulputate leo. Pellentesque 
+                            nec ultricies sem, et vulputate lacus. Cras at ultricies ipsum. Cras id consequat erat.
+                        </div>
                     </div>
-                    <div className={styles.sliderContent}>
-                        <div className={styles.sliderInside} data-index="3"></div>
+                    <div className={styles.sliderContent} data-index="3">
+                        <div className={styles.sliderOverlay}></div>
+                        <div className={styles.sliderInside  + " oswald-geral"}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum ante eget quam 
+                            condimentum pretium. Fusce aliquam fringilla dui ut venenatis. Mauris tristique 
+                            mattis ligula eu viverra. Morbi justo purus, luctus et imperdiet nec, accumsan in 
+                            ex. Donec ut nibh et risus consequat venenatis sed a est. In rhoncus, nunc at faucibus 
+                            pulvinar, ex nisl aliquet elit, eu porta nunc urna id urna. Fusce at ipsum euismod, 
+                            iaculis mauris id, facilisis turpis. Nulla ac dapibus quam, ut vulputate leo. Pellentesque 
+                            nec ultricies sem, et vulputate lacus. Cras at ultricies ipsum. Cras id consequat erat.
+                        </div>
                     </div>
-                    <div className={styles.sliderContent}>
-                        <div className={styles.sliderInside} data-index="4"></div>
+                    <div className={styles.sliderContent} data-index="4">
+                        <div className={styles.sliderOverlay}></div>
+                        <div className={styles.sliderInside  + " oswald-geral"}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum ante eget quam 
+                            condimentum pretium. Fusce aliquam fringilla dui ut venenatis. Mauris tristique 
+                            mattis ligula eu viverra. Morbi justo purus, luctus et imperdiet nec, accumsan in 
+                            ex. Donec ut nibh et risus consequat venenatis sed a est. In rhoncus, nunc at faucibus 
+                            pulvinar, ex nisl aliquet elit, eu porta nunc urna id urna. Fusce at ipsum euismod, 
+                            iaculis mauris id, facilisis turpis. Nulla ac dapibus quam, ut vulputate leo. Pellentesque 
+                            nec ultricies sem, et vulputate lacus. Cras at ultricies ipsum. Cras id consequat erat.
+                        </div>
                     </div>
-                    <div className={styles.sliderContent}>
-                        <div className={styles.sliderInside} data-index="5"></div>
+                    <div className={styles.sliderContent} data-index="5">
+                        <div className={styles.sliderOverlay}></div>
+                        <div className={styles.sliderInside  + " oswald-geral"}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum ante eget quam 
+                            condimentum pretium. Fusce aliquam fringilla dui ut venenatis. Mauris tristique 
+                            mattis ligula eu viverra. Morbi justo purus, luctus et imperdiet nec, accumsan in 
+                            ex. Donec ut nibh et risus consequat venenatis sed a est. In rhoncus, nunc at faucibus 
+                            pulvinar, ex nisl aliquet elit, eu porta nunc urna id urna. Fusce at ipsum euismod, 
+                            iaculis mauris id, facilisis turpis. Nulla ac dapibus quam, ut vulputate leo. Pellentesque 
+                            nec ultricies sem, et vulputate lacus. Cras at ultricies ipsum. Cras id consequat erat.
+                        </div>
                     </div>
-                    <div className={styles.sliderContent}>
-                        <div className={styles.sliderInside} data-index="6"></div>
+                    <div className={styles.sliderContent} data-index="6">
+                        <div className={styles.sliderOverlay}></div>
+                        <div className={styles.sliderInside  + " oswald-geral"}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum ante eget quam 
+                            condimentum pretium. Fusce aliquam fringilla dui ut venenatis. Mauris tristique 
+                            mattis ligula eu viverra. Morbi justo purus, luctus et imperdiet nec, accumsan in 
+                            ex. Donec ut nibh et risus consequat venenatis sed a est. In rhoncus, nunc at faucibus 
+                            pulvinar, ex nisl aliquet elit, eu porta nunc urna id urna. Fusce at ipsum euismod, 
+                            iaculis mauris id, facilisis turpis. Nulla ac dapibus quam, ut vulputate leo. Pellentesque 
+                            nec ultricies sem, et vulputate lacus. Cras at ultricies ipsum. Cras id consequat erat.
+                        </div>
                     </div>
-                    <div className={styles.sliderContent}>
-                        <div className={styles.sliderInside} data-index="7"></div>
+                    <div className={styles.sliderContent} data-index="7">
+                        <div className={styles.sliderOverlay}></div>
+                        <div className={styles.sliderInside  + " oswald-geral"}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum ante eget quam 
+                            condimentum pretium. Fusce aliquam fringilla dui ut venenatis. Mauris tristique 
+                            mattis ligula eu viverra. Morbi justo purus, luctus et imperdiet nec, accumsan in 
+                            ex. Donec ut nibh et risus consequat venenatis sed a est. In rhoncus, nunc at faucibus 
+                            pulvinar, ex nisl aliquet elit, eu porta nunc urna id urna. Fusce at ipsum euismod, 
+                            iaculis mauris id, facilisis turpis. Nulla ac dapibus quam, ut vulputate leo. Pellentesque 
+                            nec ultricies sem, et vulputate lacus. Cras at ultricies ipsum. Cras id consequat erat.
+                        </div>
                     </div>
-                    <div className={styles.sliderContent}>
-                        <div className={styles.sliderInside} data-index="8"></div>
+                    <div className={styles.sliderContent} data-index="8">
+                        <div className={styles.sliderOverlay}></div>
+                        <div className={styles.sliderInside + " oswald-geral"}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum ante eget quam 
+                            condimentum pretium. Fusce aliquam fringilla dui ut venenatis. Mauris tristique 
+                            mattis ligula eu viverra. Morbi justo purus, luctus et imperdiet nec, accumsan in 
+                            ex. Donec ut nibh et risus consequat venenatis sed a est. In rhoncus, nunc at faucibus 
+                            pulvinar, ex nisl aliquet elit, eu porta nunc urna id urna. Fusce at ipsum euismod, 
+                            iaculis mauris id, facilisis turpis. Nulla ac dapibus quam, ut vulputate leo. Pellentesque 
+                            nec ultricies sem, et vulputate lacus. Cras at ultricies ipsum. Cras id consequat erat.
+                        </div>
                     </div>
-                    <div className={styles.sliderContent}>
-                        <div className={styles.sliderInside} data-index="9"></div>
+                    <div className={styles.sliderContent} data-index="9">
+                        <div className={styles.sliderOverlay}></div>
+                        <div className={styles.sliderInside  + " oswald-geral"}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum ante eget quam 
+                            condimentum pretium. Fusce aliquam fringilla dui ut venenatis. Mauris tristique 
+                            mattis ligula eu viverra. Morbi justo purus, luctus et imperdiet nec, accumsan in 
+                            ex. Donec ut nibh et risus consequat venenatis sed a est. In rhoncus, nunc at faucibus 
+                            pulvinar, ex nisl aliquet elit, eu porta nunc urna id urna. Fusce at ipsum euismod, 
+                            iaculis mauris id, facilisis turpis. Nulla ac dapibus quam, ut vulputate leo. Pellentesque 
+                            nec ultricies sem, et vulputate lacus. Cras at ultricies ipsum. Cras id consequat erat.
+                        </div>
                     </div>
                 </div>
                 <div className={styles.buttonBox}>
