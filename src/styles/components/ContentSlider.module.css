@@ -36,9 +36,8 @@
     position: relative;
     margin: 0 3rem;
     transition: opacity 1s, aspect-ratio 1s, background-image 1s;
-    background-image: url('../../assets/slider/no-overlay.png');
     background-position: center;
-    background-size: 100% 100%;
+    background-size: auto 150%;
     background-repeat: no-repeat;
     border-radius: 5rem;
     justify-items:end;
@@ -66,10 +65,23 @@
 
 #leftButton, #rightButton {
     position: relative;
-    width: 100px;
-    height: 100px;
-    margin: 0 2rem;
-    background-color: yellow;
+    width: 80px;
+    aspect-ratio: 1 / 1;
+    margin: 0 5rem;
+    background-image: url("../../../public/ArrowLight.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: width 0.4s;
+}
+
+#leftButton:hover, #rightButton:hover {
+    width: 110px;
+}
+
+#leftButton {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
 @keyframes anim-slider-1 {
@@ -97,9 +109,9 @@
 .sliderInside {
     width: 40%;
     height: 80%;
-    font-size: 1rem;
+    font-size: 1.2rem;
     letter-spacing: .5rem;
-    color: #101010;
+    color: #ffffff;
     position: relative;
     padding: 2rem;
     text-align: right;
@@ -134,5 +146,11 @@
 @media screen and (prefers-color-scheme: dark) {
     .sliderOverlay {
         background-image: url('../../assets/slider/green-overlay.png');
+    }
+    #leftButton, #rightButton {
+        background-image: url("../../../public/ArrowDark.svg");
+    }
+    .sliderInside {
+        color: #101010;
     }
 }
