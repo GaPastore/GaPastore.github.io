@@ -1,13 +1,17 @@
 :root{
   --width-slider: 100%;
-  --height-slider: 79vh;
+  --height-slider: 75vh;
   --slides-qt-slider: 5;
   --seconds-slider: 0%;
 }
 
+.thisTitle {
+    color: #690079;
+}
+
 .slider{
     width: 100%;
-    height: calc(var(--height-slider) * 1.4);
+    height: var(--height-slider);
     overflow: hidden;
     position: relative;
 }
@@ -18,7 +22,6 @@
     height: var(--height-slider);  
     display: flex;
     align-items: stretch;
-    margin-bottom: 4rem;
     flex-direction: row;
     overflow: hidden;
 }
@@ -40,7 +43,7 @@
     background-size: auto 150%;
     background-repeat: no-repeat;
     border-radius: 5rem;
-    justify-items:end;
+    justify-items: end;
 }
 
 .active:hover{
@@ -58,16 +61,20 @@
 .buttonBox {
     position: absolute;
     width: 100%;
-    height: 200px;
+    height: 12vh;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     display: flex;
+    justify-items: center;
+    align-items: center;
     justify-content: center;
 }
 
 #leftButton, #rightButton {
     position: relative;
-    width: 80px;
+    width: 8vh;
     aspect-ratio: 1 / 1;
-    margin: 0 5rem;
+    margin: 0 9vw;
     background-image: url("../../../public/ArrowLight.svg");
     background-position: center;
     background-size: contain;
@@ -76,7 +83,7 @@
 }
 
 #leftButton:hover, #rightButton:hover {
-    width: 110px;
+    width: 10vh;
 }
 
 #leftButton {
@@ -99,7 +106,6 @@
 }
 
 .sliderInside, .sliderOverlay{
-    border-radius: 5rem;
     overflow: hidden;
     opacity: 0;
     z-index: 2;
@@ -108,17 +114,20 @@
 
 .sliderInside {
     width: 40%;
-    height: 80%;
-    font-size: 1.2rem;
+    height: 85%;
+    font-size: 1.8vw;
     letter-spacing: .5rem;
     color: #ffffff;
-    position: relative;
-    padding: 2rem;
+    position: absolute;
     text-align: right;
     text-overflow: clip;
+    top: 50%;
+    left: 55%;
+    transform: translateY(-50%);
 }
 
 .sliderOverlay {
+    border-radius: 5rem;
     width: 100%;
     height: 100%;
     background-image: url('../../assets/slider/purple-overlay.png');
@@ -152,5 +161,8 @@
     }
     .sliderInside {
         color: #101010;
+    }
+    .thisTitle {
+        color: #8BCD45;
     }
 }

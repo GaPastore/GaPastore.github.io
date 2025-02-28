@@ -1,0 +1,26 @@
+import React, { useState } from 'react';
+import styles from '../styles/components/Header.module.css';
+
+function Header(){
+
+    return(
+        <div>
+            <div className={styles.introDiv}>
+                <div className={"title oswald-plus " + styles.thisTitle}>APRESENTAÇÃO</div>
+                <div className={styles.profileImg}></div>
+                <div className={styles.introText + " oswald-geral"}>
+                    Possuo conhecimento em áreas da tecnologia voltadas ao desenvolvimento de softwares, 
+                    desenvolvimento de sites e design gráfico. Em 2014 tive a oportunidade de estudar na
+                    escola SAGA, na qual fiz o curso Start e aprendi muito sobre design gráfico, 
+                    principalmente sobre edição audiovisual, edição de imagens e arte vetorial. Atualmente
+                    cursando Ciência da Computação na Universidade São Judas Tadeu, estou em contato com o
+                    mundo da programação desde 2018, quando iniciei o curso técnico de Informática juntamente 
+                    ao Ensino Médio na escola ENIAC.
+                </div>
+            </div>
+        </div>
+    )
+
+}
+
+export default Header;

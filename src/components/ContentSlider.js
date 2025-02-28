@@ -136,6 +136,7 @@ function ContentSlider() {
 
     return(
         <div>
+            <div className={"title oswald-plus " + styles.thisTitle}>PORTFOLIO</div>
             <div className={styles.slider}>
                 <div ref={divRef} className={styles.sliderBox + " " + styles.animClass}>
                     <div className={styles.sliderContent} data-index="0">
@@ -259,11 +260,11 @@ function ContentSlider() {
                         </div>
                     </div>
                 </div>
-                <div className={styles.buttonBox}>
-                    <div onClick={disabled ? () => {} : prevItem} id={styles.leftButton}></div>
-                    <div onClick={disabled ? () => {} : nextItem} id={styles.rightButton}></div>
-                </div>
             </div>   
+            <div className={styles.buttonBox}>
+                <div onClick={disabled ? () => {} : prevItem} id={styles.leftButton}></div>
+                <div onClick={disabled ? () => {} : nextItem} id={styles.rightButton}></div>
+            </div>
         </div>
     )
 
