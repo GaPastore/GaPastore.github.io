@@ -11,6 +11,7 @@
     width: 45%;
     height: 61%;
     position: absolute;
+    color: #ffffff;
     text-align: right;
     align-content: center;
     font-size: 3.3vh;
@@ -21,7 +22,7 @@
 .profileImg {
     height: 61%;
     aspect-ratio: 3 / 4;
-    background-image: url('../../assets/misc/me.jpeg');
+    background-image: url('../../../assets/misc/me.jpeg');
     border-radius: 5rem;
     background-position: center;
     background-size: cover;
@@ -43,7 +44,7 @@
 }
 
 @media screen and (prefers-color-scheme: dark) {
-    .thisTitle{
+    .thisTitle, .introText{
         color: #101010;
     }
     .introDiv {

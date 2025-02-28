@@ -1,6 +1,6 @@
 import useState from 'react-usestateref';
 import { useRef } from 'react';
-import styles from "../styles/components/ContentSlider.module.css"
+import styles from "../../styles/components/Home/ContentSlider.module.css"
 
 function ContentSlider() {
 

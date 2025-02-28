@@ -75,7 +75,7 @@
     width: 8vh;
     aspect-ratio: 1 / 1;
     margin: 0 9vw;
-    background-image: url("../../../public/ArrowLight.svg");
+    background-image: url("../../../../public/ArrowLight.svg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -130,34 +130,34 @@
     border-radius: 5rem;
     width: 100%;
     height: 100%;
-    background-image: url('../../assets/slider/purple-overlay.png');
+    background-image: url('../../../assets/slider/purple-overlay.png');
     background-size: contain;
     position: absolute;
     z-index: 1;
 }
 
 [data-index="0"], [data-index="5"] {
-    background-image: url('../../assets/background/4kImageBlue.jpg');
+    background-image: url('../../../assets/background/4kImageBlue.jpg');
 }
 [data-index="1"], [data-index="6"] {
-    background-image: url('../../assets/background/4kImageColored.jpg');
+    background-image: url('../../../assets/background/4kImageColored.jpg');
 }
 [data-index="2"], [data-index="7"] {
-    background-image: url('../../assets/background/exampleImageBW.jpg');
+    background-image: url('../../../assets/background/exampleImageBW.jpg');
 }
 [data-index="3"], [data-index="8"] {
-    background-image: url('../../assets/background/exampleImageColored.png');
+    background-image: url('../../../assets/background/exampleImageColored.png');
 }
 [data-index="4"], [data-index="9"] {
-    background-image: url('../../../public/favlight.svg');
+    background-image: url('../../../../public/favlight.svg');
 }
 
 @media screen and (prefers-color-scheme: dark) {
     .sliderOverlay {
-        background-image: url('../../assets/slider/green-overlay.png');
+        background-image: url('../../../assets/slider/green-overlay.png');
     }
     #leftButton, #rightButton {
-        background-image: url("../../../public/ArrowDark.svg");
+        background-image: url("../../../../public/ArrowDark.svg");
     }
     .sliderInside {
         color: #101010;

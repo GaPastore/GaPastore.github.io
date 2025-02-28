@@ -1,5 +1,5 @@
 .menuBt{
-    background: url("../../../public/MenuLight.svg");
+    background: url("../../../../public/MenuLight.svg");
     position: fixed;
     width: 7rem;
     height: 7rem;
@@ -63,7 +63,7 @@
 
 @media screen and (prefers-color-scheme: dark) {
     .menuBt {
-        background-image: url('../../../public/MenuDark.svg');
+        background-image: url('../../../../public/MenuDark.svg');
     }
     .menuBg.visible {
         background-color: rgba(0,0,0,.7);

@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
-import styles from '../styles/components/Carousel.module.css'
-import BgOne from '../assets/background/4kImageColored.jpg'
+import styles from '../../styles/components/Home/Carousel.module.css'
+import BgOne from '../../assets/background/4kImageColored.jpg'
 
 function Carousel(){
 
