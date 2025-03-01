@@ -4,7 +4,7 @@ import Audiovisual from './pages/Audiovisual';
 import CienciaDaComputacao from './pages/CienciaDaComputacao';
 import Desenhos from './pages/Desenhos';
 import Contato from './pages/Contato';
-import Menu from './components/Home/Menu';
+import Menu from './components/Menu';
 
 function App() {
   return (

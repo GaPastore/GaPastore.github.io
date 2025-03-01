@@ -22,12 +22,12 @@
 .profileImg {
     height: 61%;
     aspect-ratio: 3 / 4;
-    background-image: url('../../../assets/misc/me.jpeg');
+    background-image: url('../../../assets/misc/me.JPG');
     border-radius: 5rem;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    filter: grayscale(1);
+    filter: brightness(.8) contrast(1.2);
     position: absolute;
     left: 25%;
 }

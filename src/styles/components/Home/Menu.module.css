@@ -20,7 +20,10 @@
     z-index: 1000;
 }
 
-.menuText{
+.menuText, .menuText:link, .menuText:visited {
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
     width: 100%;
     padding: 1.5rem 0;
     font-size: 7vh;
@@ -34,6 +37,13 @@
     -moz-transition: all .7s ease-out;
     -o-transition: all .7s ease-out;
     transition: all .7s ease-out;
+    a {
+        -webkit-transition: all .7s ease-out;
+        -moz-transition: all .7s ease-out;
+        -o-transition: all .7s ease-out;
+        transition: all .7s ease-out;
+        text-decoration: none;
+    }
     visibility: hidden;
     z-index: 1000;
 }
@@ -44,7 +54,9 @@
     -o-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     visibility: visible;
-    color: #690079;
+    a {
+        color: #690079;
+    }
     z-index: 1000;
 }
 
@@ -68,7 +80,14 @@
     .menuBg.visible {
         background-color: rgba(0,0,0,.7);
     }
+    .menuBox, .menuText {
+        a {
+            color: #8BCD4500;
+        }
+    }
     .menuBox.visible, .menuText.visible {
-        color: #8BCD45;
+        a {
+            color: #8BCD45;
+        }
     }
 }
