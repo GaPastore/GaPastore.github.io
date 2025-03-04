@@ -4,7 +4,6 @@
     background-color: #690079;
     padding-bottom: 5rem;
     position: relative;
-    overflow: hidden;
 }
 
 .introText {
@@ -36,11 +35,23 @@
     padding: .3rem;
     top: 60%;
     transform: translate(-50%, -50%);
+    opacity: 1;
 }
 
 .thisTitle {
+    position: absolute;
     padding-top: 2rem;
     color: #ffffff;
+}
+
+.onScreen {
+    animation: appear 2s ease-in-out;
+}
+
+@keyframes appear {
+    to {
+        opacity: 1;
+    }
 }
 
 @media screen and (prefers-color-scheme: dark) {
