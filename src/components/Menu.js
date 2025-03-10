@@ -17,19 +17,19 @@ function Menu(){
         <div>
             <div className={`${styles.menuBg} ${menuHidden ? styles.visible : ''}`}></div>
             <div className={`${styles.menuBox} ${menuHidden ? styles.visible : ''}`}>
-                <button className={`${classesText} ${menuHidden ? styles.visible : ''}`}>
+                <button className={`${classesText} ${menuHidden ? styles.visible : ''}`} onClick={toggleButton}>
                     <Link to="/">PÁGINA INICIAL</Link>
                 </button>
-                <button className={`${classesText} ${menuHidden ? styles.visible : ''}`}>
+                <button className={`${classesText} ${menuHidden ? styles.visible : ''}`} onClick={toggleButton}>
                     <Link to="/audiovisual">PROJETOS EM AUDIOVISUAL</Link>
                 </button>
-                <button className={`${classesText} ${menuHidden ? styles.visible : ''}`}>
+                <button className={`${classesText} ${menuHidden ? styles.visible : ''}`} onClick={toggleButton}>
                     <Link to="/ciencia_da_computacao">CIÊNCIA DA COMPUTAÇÃO</Link>
                 </button>
-                <button className={`${classesText} ${menuHidden ? styles.visible : ''}`}>
+                <button className={`${classesText} ${menuHidden ? styles.visible : ''}`} onClick={toggleButton}>
                     <Link to="/desenhos">DESENHOS</Link>
                 </button>
-                <button className={`${classesText} ${menuHidden ? styles.visible : ''}`}>
+                <button className={`${classesText} ${menuHidden ? styles.visible : ''}`} onClick={toggleButton}>
                     <Link to="/contato">CONTATO</Link>
                 </button>
             </div>

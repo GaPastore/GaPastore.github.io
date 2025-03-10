@@ -12,10 +12,10 @@ function App() {
       <Menu/>
       <Routes>
         <Route path='/' element={<Home />} />
-        {/*<Route path='/audiovisual' element={<Audiovisual />} />
+        <Route path='/audiovisual' element={<Audiovisual />} />
         <Route path='/ciencia_da_computacao' element={<CienciaDaComputacao />} />
         <Route path='/desenhos' element={<Desenhos />} />
-        <Route path='/contato' element={<Contato />} />*/}
+        <Route path='/contato' element={<Contato />} />
       </Routes>
     </Router>
   );
