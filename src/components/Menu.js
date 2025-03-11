@@ -13,24 +13,28 @@ function Menu(){
 
     const classesText = styles.menuText + " oswald-geral";
 
+    const scrollTop = () => {
+        window.scrollTo(0, 0)
+    }
+
     return(
         <div>
             <div className={`${styles.menuBg} ${menuHidden ? styles.visible : ''}`}></div>
             <div className={`${styles.menuBox} ${menuHidden ? styles.visible : ''}`}>
                 <button className={`${classesText} ${menuHidden ? styles.visible : ''}`} onClick={toggleButton}>
-                    <Link to="/">PÁGINA INICIAL</Link>
+                    <Link to="/" onClick={scrollTop}>PÁGINA INICIAL</Link>
                 </button>
                 <button className={`${classesText} ${menuHidden ? styles.visible : ''}`} onClick={toggleButton}>
-                    <Link to="/audiovisual">PROJETOS EM AUDIOVISUAL</Link>
+                    <Link to="/audiovisual" onClick={scrollTop}>PROJETOS EM AUDIOVISUAL</Link>
                 </button>
                 <button className={`${classesText} ${menuHidden ? styles.visible : ''}`} onClick={toggleButton}>
-                    <Link to="/ciencia_da_computacao">CIÊNCIA DA COMPUTAÇÃO</Link>
+                    <Link to="/ciencia_da_computacao" onClick={scrollTop}>CIÊNCIA DA COMPUTAÇÃO</Link>
                 </button>
                 <button className={`${classesText} ${menuHidden ? styles.visible : ''}`} onClick={toggleButton}>
-                    <Link to="/desenhos">DESENHOS</Link>
+                    <Link to="/desenhos" onClick={scrollTop}>DESENHOS</Link>
                 </button>
                 <button className={`${classesText} ${menuHidden ? styles.visible : ''}`} onClick={toggleButton}>
-                    <Link to="/contato">CONTATO</Link>
+                    <Link to="/contato" onClick={scrollTop}>CONTATO</Link>
                 </button>
             </div>
             <div className={`${styles.menuBt}`} onClick={toggleButton}></div>
