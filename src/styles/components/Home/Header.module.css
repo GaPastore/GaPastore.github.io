@@ -10,7 +10,7 @@
     width: 45%;
     height: 61%;
     position: absolute;
-    color: #ffffff;
+    color: rgb(249, 212, 255);
     text-align: right;
     align-content: center;
     font-size: 3.3vh;
@@ -19,14 +19,19 @@
 }
 
 .profileImg {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     height: 61%;
     aspect-ratio: 3 / 4;
-    background-image: url('../../../assets/misc/me.JPG');
+    background-image: url('../../../assets/misc/me.jpg');
     border-radius: 5rem;
+    border-width: 1rem;
+    border-color: rgb(249, 212, 255);
+    border-style: solid;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    filter: brightness(.8) contrast(1.2);
     position: absolute;
     left: 25%;
 }
@@ -41,7 +46,7 @@
 .thisTitle {
     position: absolute;
     padding-top: 2rem;
-    color: #ffffff;
+    color: rgb(249, 212, 255);
 }
 
 .onScreen {
@@ -60,5 +65,8 @@
     }
     .introDiv {
         background-color: #8BCD45;
+    }
+    .profileImg {
+        border-color: #101010 !important;
     }
 }
