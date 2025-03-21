@@ -31,6 +31,7 @@ function Header(){
             <div className={styles.introDiv}>
                 <div className={"title oswald-plus animate " + styles.thisTitle}>APRESENTAÇÃO</div>
                 <div className={"animate " + styles.profileImg}></div>
+                <div className={styles.holderImg}></div>
                 <div className={"oswald-geral animate " + styles.introText}>
                     Possuo conhecimento em áreas da tecnologia voltadas ao desenvolvimento de softwares, 
                     desenvolvimento de sites e design gráfico. Em 2014 tive a oportunidade de estudar na
