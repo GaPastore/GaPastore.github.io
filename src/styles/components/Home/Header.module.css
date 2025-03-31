@@ -27,6 +27,8 @@
     width: 80rem;
     top: 50%;
     right: 43%;
+    justify-items: end;
+    align-content: center;
     border-radius: 4rem;
     border-width: 2rem;
     z-index: 1;
@@ -34,22 +36,19 @@
 }
 
 .profileImg {
-    height: 50%;
+    height: 95%;
+    position: relative;
     aspect-ratio: 3 / 4;
     background-image: url('../../../assets/misc/me.jpg');
-    border-radius: 4rem;
-    border-width: 2rem;
-    border-color: rgb(249, 212, 255);
-    border-style: solid;
+    right: 2rem;
+    border-radius: 2rem;
     background-position: center;
     background-size: 150%;
     background-repeat: no-repeat;
-    position: absolute;
-    left: 25%;
     z-index: 2;
 }
 
-.profileImg, .introText {
+.introText {
     padding: .3rem;
     top: 60%;
     transform: translate(-50%, -50%);
@@ -57,19 +56,9 @@
 }
 
 .thisTitle {
-    position: absolute;
+    position: relative;
     padding-top: 2rem;
     color: rgb(249, 212, 255);
-}
-
-.onScreen {
-    animation: appear 2s ease-in-out;
-}
-
-@keyframes appear {
-    to {
-        opacity: 1;
-    }
 }
 
 @media screen and (prefers-color-scheme: dark) {

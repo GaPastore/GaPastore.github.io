@@ -44,16 +44,6 @@
     color: rgb(249, 212, 255);
 }
 
-.onScreen {
-    animation: appear 2s ease-in-out;
-}
-
-@keyframes appear {
-    to {
-        opacity: 1;
-    }
-}
-
 @media screen and (prefers-color-scheme: dark) {
     .thisTitle, .introText{
         color: #101010;
