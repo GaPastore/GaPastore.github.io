@@ -19,18 +19,24 @@
 }
 
 .flexDiv {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    column-gap: 2rem;
+    row-gap: 2rem;
     width: 100%;
-    height: 60%;
+    height: 70%;
     flex-direction: row;
     align-self: center;
     align-content: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .drawImg {
-    height: 40rem;
-    aspect-ratio: 3 / 4;
+    height: 35rem;
+    aspect-ratio: 1 / 1;
+    min-width: 0;
     border-radius: 5rem;
     background-position: center;
     margin: 0 1rem 0 1rem;
@@ -42,7 +48,7 @@
 }
 
 .drawImg:hover {
-    height: 45rem;
+    height: 40rem;
 }
 
 #tcd {

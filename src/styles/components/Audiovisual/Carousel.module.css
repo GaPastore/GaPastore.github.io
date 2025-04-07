@@ -8,7 +8,7 @@
   text-align: center;
   font-size: 5rem;
   text-align: center;
-  color: #330E39;
+  color: rgb(249, 212, 255);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -26,8 +26,8 @@
   z-index: 998;
   width: var(--width);
   height: var(--height);
-  background-color: rgba(255,255,255,.2);
-  box-shadow: 0 0 200px 200px rgba(255,255,255,.7) inset;
+  background-color: rgba(51, 14, 57, .1);
+  box-shadow: 0 0 200px 200px rgba(51, 14, 57, .5) inset;
 }
 
 .carousel, .carouselImage{
