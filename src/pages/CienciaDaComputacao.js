@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import Carousel from '../components/CienciaDaComputacao/Carousel';
-import Header from '../components/CienciaDaComputacao/Header';
+import HeaderCC from '../components/CienciaDaComputacao/HeaderCC';
+import ContentCC from '../components/CienciaDaComputacao/ContentCC';
 
 function CienciaDaComputacao() {
     return (
         <div>
-            <Carousel/>
-            <Header/>
+            <HeaderCC/>
+            <ContentCC/>
         </div>
     )
 }

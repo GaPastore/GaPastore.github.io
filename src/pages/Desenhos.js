@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import Carousel from '../components/Desenhos/Carousel';
-import Header from '../components/Desenhos/Header';
+import HeaderDesenhos from '../components/Desenhos/HeaderDesenhos';
+import ContentDesenhos from '../components/Desenhos/ContentDesenhos';
 
 function Desenhos() {
     return (
         <div>
-            <Carousel/>
-            <Header/>
+            <HeaderDesenhos/>
+            <ContentDesenhos/>
         </div>
     )
 }

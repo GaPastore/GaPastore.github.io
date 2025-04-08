@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
-import Carousel from '../components/Audiovisual/Carousel';
-import Header from '../components/Audiovisual/Header';
-import styles from '../styles/pages/Home.module.css';
+import HeaderAudiovisual from '../components/Audiovisual/HeaderAudiovisual';
+import ContentAudiovisual from '../components/Audiovisual/ContentAudiovisual';
 
 function Audiovisual() {
     return (
         <div>
-            <Carousel/>
-            <Header/>
+            <HeaderAudiovisual/>
+            <ContentAudiovisual/>
         </div>
     )
 }

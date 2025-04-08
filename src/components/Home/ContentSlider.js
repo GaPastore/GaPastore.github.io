@@ -1,5 +1,6 @@
 import useState from 'react-usestateref';
 import { useRef } from 'react';
+import { Link } from 'react-router-dom';
 import styles from "../../styles/components/Home/ContentSlider.module.css"
 
 function ContentSlider() {
@@ -56,6 +57,10 @@ function ContentSlider() {
 
         }
         
+    }
+
+    const scrollTop = () => {
+        window.scrollTo(0, 0)
     }
 
     window.onload = () => {
@@ -142,37 +147,24 @@ function ContentSlider() {
                     <div className={styles.sliderContent} data-index="0">
                         <div className={styles.sliderOverlay}></div>
                         <div className={styles.sliderInside + " oswald-geral"}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum ante eget quam 
-                            condimentum pretium. Fusce aliquam fringilla dui ut venenatis. Mauris tristique 
-                            mattis ligula eu viverra. Morbi justo purus, luctus et imperdiet nec, accumsan in 
-                            ex. Donec ut nibh et risus consequat venenatis sed a est. In rhoncus, nunc at faucibus 
-                            pulvinar, ex nisl aliquet elit, eu porta nunc urna id urna. Fusce at ipsum euismod, 
-                            iaculis mauris id, facilisis turpis. Nulla ac dapibus quam, ut vulputate leo. Pellentesque 
-                            nec ultricies sem, et vulputate lacus. Cras at ultricies ipsum. Cras id consequat erat.
+                            Meu currículo inclui o desenvolvimento de alguns jogos de pequeno porte, um desses exemplos
+                            é o Micescape: um jogo 2D desenvolvido em Unity com elementos de terror. Para ver esse e mais
+                            projetos, <Link className={styles.link} to="/ciencia_da_computacao" onClick={scrollTop}>clique aqui.</Link>
                         </div>
                     </div>
                     <div className={styles.sliderContent} data-index="1">
                         <div className={styles.sliderOverlay}></div>
                         <div className={styles.sliderInside  + " oswald-geral"}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum ante eget quam 
-                            condimentum pretium. Fusce aliquam fringilla dui ut venenatis. Mauris tristique 
-                            mattis ligula eu viverra. Morbi justo purus, luctus et imperdiet nec, accumsan in 
-                            ex. Donec ut nibh et risus consequat venenatis sed a est. In rhoncus, nunc at faucibus 
-                            pulvinar, ex nisl aliquet elit, eu porta nunc urna id urna. Fusce at ipsum euismod, 
-                            iaculis mauris id, facilisis turpis. Nulla ac dapibus quam, ut vulputate leo. Pellentesque 
-                            nec ultricies sem, et vulputate lacus. Cras at ultricies ipsum. Cras id consequat erat.
+                            Há muitos anos tenho como hobby as artes, principalmente através de desenhos - sejam eles físicos
+                            ou digitais. Se você quer ver algumas das artes digitais que já fiz durante o tempo, <Link className={styles.link} to="/desenhos" onClick={scrollTop}>clique aqui.</Link>
                         </div>
                     </div>
                     <div className={styles.sliderContent} data-index="2">
                         <div className={styles.sliderOverlay}></div>
                         <div className={styles.sliderInside  + " oswald-geral"}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum ante eget quam 
-                            condimentum pretium. Fusce aliquam fringilla dui ut venenatis. Mauris tristique 
-                            mattis ligula eu viverra. Morbi justo purus, luctus et imperdiet nec, accumsan in 
-                            ex. Donec ut nibh et risus consequat venenatis sed a est. In rhoncus, nunc at faucibus 
-                            pulvinar, ex nisl aliquet elit, eu porta nunc urna id urna. Fusce at ipsum euismod, 
-                            iaculis mauris id, facilisis turpis. Nulla ac dapibus quam, ut vulputate leo. Pellentesque 
-                            nec ultricies sem, et vulputate lacus. Cras at ultricies ipsum. Cras id consequat erat.
+                            Desde 2018 tenho estudado programação e outras questões relacionadas à informática, com diversos projetos para demonstração de minhas habilidades. O melhor exemplo para
+                            isso é esse site: todo seu planejamento e desenvolvimento foi feito por mim. 
+                            Para acessar esses projetos, <Link className={styles.link} to="/ciencia_da_computacao" onClick={scrollTop}>clique aqui.</Link>
                         </div>
                     </div>
                     <div className={styles.sliderContent} data-index="3">
@@ -202,37 +194,24 @@ function ContentSlider() {
                     <div className={styles.sliderContent} data-index="5">
                         <div className={styles.sliderOverlay}></div>
                         <div className={styles.sliderInside  + " oswald-geral"}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum ante eget quam 
-                            condimentum pretium. Fusce aliquam fringilla dui ut venenatis. Mauris tristique 
-                            mattis ligula eu viverra. Morbi justo purus, luctus et imperdiet nec, accumsan in 
-                            ex. Donec ut nibh et risus consequat venenatis sed a est. In rhoncus, nunc at faucibus 
-                            pulvinar, ex nisl aliquet elit, eu porta nunc urna id urna. Fusce at ipsum euismod, 
-                            iaculis mauris id, facilisis turpis. Nulla ac dapibus quam, ut vulputate leo. Pellentesque 
-                            nec ultricies sem, et vulputate lacus. Cras at ultricies ipsum. Cras id consequat erat.
+                            Meu currículo inclui o desenvolvimento de alguns jogos de pequeno porte, um desses exemplos
+                            é o Micescape: um jogo 2D desenvolvido em Unity com elementos de terror. Para ver esse e mais
+                            projetos, <Link className={styles.link} to="/ciencia_da_computacao" onClick={scrollTop}>clique aqui.</Link>
                         </div>
                     </div>
                     <div className={styles.sliderContent} data-index="6">
                         <div className={styles.sliderOverlay}></div>
                         <div className={styles.sliderInside  + " oswald-geral"}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum ante eget quam 
-                            condimentum pretium. Fusce aliquam fringilla dui ut venenatis. Mauris tristique 
-                            mattis ligula eu viverra. Morbi justo purus, luctus et imperdiet nec, accumsan in 
-                            ex. Donec ut nibh et risus consequat venenatis sed a est. In rhoncus, nunc at faucibus 
-                            pulvinar, ex nisl aliquet elit, eu porta nunc urna id urna. Fusce at ipsum euismod, 
-                            iaculis mauris id, facilisis turpis. Nulla ac dapibus quam, ut vulputate leo. Pellentesque 
-                            nec ultricies sem, et vulputate lacus. Cras at ultricies ipsum. Cras id consequat erat.
+                            Há muitos anos tenho como hobby as artes, principalmente através de desenhos - sejam eles físicos
+                            ou digitais. Se você quer ver algumas das artes digitais que já fiz durante o tempo, <Link className={styles.link} to="/desenhos" onClick={scrollTop}>clique aqui.</Link>
                         </div>
                     </div>
                     <div className={styles.sliderContent} data-index="7">
                         <div className={styles.sliderOverlay}></div>
                         <div className={styles.sliderInside  + " oswald-geral"}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum ante eget quam 
-                            condimentum pretium. Fusce aliquam fringilla dui ut venenatis. Mauris tristique 
-                            mattis ligula eu viverra. Morbi justo purus, luctus et imperdiet nec, accumsan in 
-                            ex. Donec ut nibh et risus consequat venenatis sed a est. In rhoncus, nunc at faucibus 
-                            pulvinar, ex nisl aliquet elit, eu porta nunc urna id urna. Fusce at ipsum euismod, 
-                            iaculis mauris id, facilisis turpis. Nulla ac dapibus quam, ut vulputate leo. Pellentesque 
-                            nec ultricies sem, et vulputate lacus. Cras at ultricies ipsum. Cras id consequat erat.
+                            Desde 2018 tenho estudado programação e outras questões relacionadas à informática, possuindo
+                            diversos projetos acadêmicos para demonstração de minhas habilidades. Para acessar esses
+                            projetos, <Link className={styles.link} to="/ciencia_da_computacao" onClick={scrollTop}>clique aqui.</Link>
                         </div>
                     </div>
                     <div className={styles.sliderContent} data-index="8">

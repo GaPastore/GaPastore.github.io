@@ -1,0 +1,81 @@
+:root{
+  --width: 100%;
+  --height: 100vh;
+  --slides-qt: 10;
+}
+
+.carousel, .carouselImage{
+  width: var(--width);
+  height: var(--height);
+}
+
+.carousel {
+  overflow: hidden;
+}
+
+.carouselImage {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@keyframes scroll {
+	0% {
+    transform: translateX(0); 
+  }
+  10% { 
+    transform: translateX(calc(-1 * var(--width) / var(--slides-qt))); 
+  }
+  20% { 
+    transform: translateX(calc(-1 * var(--width) / var(--slides-qt))); 
+  }
+  30% { 
+    transform: translateX(calc(-1 * var(--width) / var(--slides-qt) * 2)); 
+  }
+  40% { 
+    transform: translateX(calc(-1 * var(--width) / var(--slides-qt) * 2)); 
+  }
+  50% { 
+    transform: translateX(calc(-1 * var(--width) / var(--slides-qt) * 3)); 
+  }
+  60% { 
+    transform: translateX(calc(-1 * var(--width) / var(--slides-qt) * 3)); 
+  }
+  70% { 
+    transform: translateX(calc(-1 * var(--width) / var(--slides-qt) * 4)); 
+  }
+  80% { 
+    transform: translateX(calc(-1 * var(--width) / var(--slides-qt) * 4)); 
+  }
+  90% { 
+    transform: translateX(calc(-1 * var(--width) / 2)); 
+  }
+	100% { 
+    transform: translateX(calc(-1 * var(--width) / 2)); 
+  }
+}
+
+@keyframes text {
+  from {
+    opacity: 0%;
+  }
+  to{
+    opacity: 100%;
+  }
+}
+
+.carouselWrapper{
+  width: calc(var(--width) * var(--slides-qt));
+  animation: scroll 30s ease-in-out infinite;
+  height: var(--height);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex: 0 0 auto;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  .carouselText {
+      color: #D5FFA9;
+  }
+}

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from '../../styles/components/Desenhos/Header.module.css';
 
-function Header(){
+function Content(){
 
     return(
         <div>
@@ -18,4 +18,4 @@ function Header(){
 
 }
 
-export default Header;
+export default Content;

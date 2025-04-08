@@ -1,0 +1,13 @@
+.vignette{
+    position: absolute;
+    z-index: 998;
+    width: var(--width);
+    height: var(--height);
+    background-color: rgba(51, 14, 57, .3);
+    box-shadow: 0 0 300px 300px rgba(51, 14, 57, .6) inset;
+}
+ 
+.vignette {
+    background-color: rgba(0,0,0,.3);
+    box-shadow: 0 0 300px 300px rgba(0,0,0,.6) inset;
+}

@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import Carousel from '../components/Contato/Carousel';
-import Header from '../components/Contato/Header';
+import HeaderContato from '../components/Contato/HeaderContato';
+import ContentContato from '../components/Contato/ContentContato';
 
 function Contato() {
     return (
         <div>
-            <Carousel/>
-            <Header/>
+            <HeaderContato/>
+            <ContentContato/>
         </div>
     )
 }
