@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import styles from '../styles/components/Home/Menu.module.css';
+import ContentSlider from './Home/ContentSlider';
 
 function Menu(){
 
@@ -17,12 +18,17 @@ function Menu(){
         window.scrollTo(0, 0)
     }
 
+    const homeOnClick = () => {
+        scrollTop()
+        window.location.replace("/")
+    }
+
     return(
         <div>
             <div className={`${styles.menuBg} ${menuHidden ? styles.visible : ''}`}></div>
             <div className={`${styles.menuBox} ${menuHidden ? styles.visible : ''}`}>
                 <button className={`${classesText} ${menuHidden ? styles.visible : ''}`} onClick={toggleButton}>
-                    <Link to="/" onClick={scrollTop}>PÁGINA INICIAL</Link>
+                    <Link to="/" onClick={homeOnClick}>PÁGINA INICIAL</Link>
                 </button>
                 <button className={`${classesText} ${menuHidden ? styles.visible : ''}`} onClick={toggleButton}>
                     <Link to="/audiovisual" onClick={scrollTop}>PROJETOS EM AUDIOVISUAL</Link>
