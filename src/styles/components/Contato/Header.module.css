@@ -1,10 +1,10 @@
 .introDiv {
     width: 100%;
-    height: 140vh;
+    height: 100vh;
     background-color: #690079;
-    padding-bottom: 10rem;
     position: relative;
     overflow: hidden;
+    align-content: center;
 }
 
 .socialBox {
@@ -41,26 +41,20 @@
     position: relative;
 }
 
-.thisTitle {
-    position: relative;
-    padding-top: 2rem;
-    color: rgb(249, 212, 255);
-}
-
 #linkedin {
-    background-image: url('../../../assets/misc/linkedin.png');
+    background-image: url('../../../assets/misc/linkedin bright.png');
 }
 
 #instagram {
-    background-image: url('../../../assets/misc/Instagram.png');
+    background-image: url('../../../assets/misc/Instagram bright.png');
 }
 
 #github {
-    background-image: url('../../../assets/misc/github.png');
+    background-image: url('../../../assets/misc/github bright.png');
 }
 
 @media screen and (prefers-color-scheme: dark) {
-    .thisTitle, .introText{
+    .introText{
         color: #101010;
     }
     .introDiv {
@@ -68,5 +62,14 @@
     }
     .introText:hover {
         filter: brightness(2);
+    }
+    #instagram {
+        background-image: url('../../../assets/misc/Instagram dark.png');
+    }
+    #linkedin {
+        background-image: url('../../../assets/misc/linkedin dark.png');
+    }
+    #github {
+        background-image: url('../../../assets/misc/github dark.png');
     }
 }

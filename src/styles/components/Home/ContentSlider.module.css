@@ -5,8 +5,9 @@
   --seconds-slider: 0%;
 }
 
-.thisTitle {
-    color: #690079;
+.box {
+    height: 100vh;
+    align-content: center;
 }
 
 .slider{
@@ -62,8 +63,8 @@
     position: absolute;
     width: 100%;
     height: 12vh;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     display: flex;
     justify-items: center;
     align-items: center;
@@ -171,10 +172,10 @@
     background-image: url('../../../assets/misc/iconomonster.jpg');
 }
 [data-index="3"], [data-index="8"] {
-    background-image: url('../../../assets/background/exampleImageColored.png');
+    background-image: url('../../../assets/misc/youtube.png');
 }
 [data-index="4"], [data-index="9"] {
-    background-image: url('../../../../public/favlight.svg');
+    background-image: url('../../../assets/misc/somos-algo.png');
 }
 
 @media screen and (prefers-color-scheme: dark) {
@@ -186,8 +187,5 @@
     }
     .sliderInside, .link {
         color: #101010;
-    }
-    .thisTitle {
-        color: #8BCD45;
     }
 }

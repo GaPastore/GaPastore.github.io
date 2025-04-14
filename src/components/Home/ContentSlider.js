@@ -140,8 +140,7 @@ function ContentSlider() {
     };
 
     return(
-        <div>
-            <div className={"title oswald-plus " + styles.thisTitle}>PORTFOLIO</div>
+        <div className={styles.box}>
             <div className={styles.slider}>
                 <div ref={divRef} className={styles.sliderBox + " " + styles.animClass}>
                     <div className={styles.sliderContent} data-index="0">
@@ -170,25 +169,18 @@ function ContentSlider() {
                     <div className={styles.sliderContent} data-index="3">
                         <div className={styles.sliderOverlay}></div>
                         <div className={styles.sliderInside  + " oswald-geral"}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum ante eget quam 
-                            condimentum pretium. Fusce aliquam fringilla dui ut venenatis. Mauris tristique 
-                            mattis ligula eu viverra. Morbi justo purus, luctus et imperdiet nec, accumsan in 
-                            ex. Donec ut nibh et risus consequat venenatis sed a est. In rhoncus, nunc at faucibus 
-                            pulvinar, ex nisl aliquet elit, eu porta nunc urna id urna. Fusce at ipsum euismod, 
-                            iaculis mauris id, facilisis turpis. Nulla ac dapibus quam, ut vulputate leo. Pellentesque 
-                            nec ultricies sem, et vulputate lacus. Cras at ultricies ipsum. Cras id consequat erat.
+                            Desde que comecei a estudar na área de audiovisual, tenho como hobby a edição de imagens e vídeos, produzindo 
+                            para amigos, faculdade, trabalho ou apenas para mim. Um exemplo 
+                            desses projetos é um canal do YouTube em que posto vídeos para me divertir e 
+                            testar minhas habilidades como editor. Para acessá-lo ou ver outros projetos em audiovisual, <Link className={styles.link} to="/audiovisual" onClick={scrollTop}>clique aqui.</Link>
                         </div>
                     </div>
                     <div className={styles.sliderContent} data-index="4">
                         <div className={styles.sliderOverlay}></div>
                         <div className={styles.sliderInside  + " oswald-geral"}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum ante eget quam 
-                            condimentum pretium. Fusce aliquam fringilla dui ut venenatis. Mauris tristique 
-                            mattis ligula eu viverra. Morbi justo purus, luctus et imperdiet nec, accumsan in 
-                            ex. Donec ut nibh et risus consequat venenatis sed a est. In rhoncus, nunc at faucibus 
-                            pulvinar, ex nisl aliquet elit, eu porta nunc urna id urna. Fusce at ipsum euismod, 
-                            iaculis mauris id, facilisis turpis. Nulla ac dapibus quam, ut vulputate leo. Pellentesque 
-                            nec ultricies sem, et vulputate lacus. Cras at ultricies ipsum. Cras id consequat erat.
+                            Conforme meus estudos em audiovisual e programação avançaram, 
+                            desenvolvi elementos visuais, logos e interfaces para diversos projetos. Isso pode ser 
+                            visto no Instagram de "Somos Algo?", em que desenvolvi as artes e vídeos de cada post. Para ver esse e mais projetos em audiovisual, <Link className={styles.link} to="/audiovisual" onClick={scrollTop}>clique aqui.</Link>
                         </div>
                     </div>
                     <div className={styles.sliderContent} data-index="5">
@@ -216,14 +208,11 @@ function ContentSlider() {
                     </div>
                     <div className={styles.sliderContent} data-index="8">
                         <div className={styles.sliderOverlay}></div>
-                        <div className={styles.sliderInside + " oswald-geral"}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum ante eget quam 
-                            condimentum pretium. Fusce aliquam fringilla dui ut venenatis. Mauris tristique 
-                            mattis ligula eu viverra. Morbi justo purus, luctus et imperdiet nec, accumsan in 
-                            ex. Donec ut nibh et risus consequat venenatis sed a est. In rhoncus, nunc at faucibus 
-                            pulvinar, ex nisl aliquet elit, eu porta nunc urna id urna. Fusce at ipsum euismod, 
-                            iaculis mauris id, facilisis turpis. Nulla ac dapibus quam, ut vulputate leo. Pellentesque 
-                            nec ultricies sem, et vulputate lacus. Cras at ultricies ipsum. Cras id consequat erat.
+                        <div className={styles.sliderInside  + " oswald-geral"}>
+                            Desde que comecei a estudar na área de audiovisual, tenho como hobby a edição de imagens e vídeos, produzindo 
+                            para amigos, faculdade, trabalho ou apenas para mim. Um exemplo 
+                            desses projetos é um canal do YouTube em que posto vídeos para me divertir e 
+                            testar minhas habilidades como editor. Para acessá-lo ou ver outros projetos em audiovisual, <Link className={styles.link} to="/audiovisual" onClick={scrollTop}>clique aqui.</Link>
                         </div>
                     </div>
                     <div className={styles.sliderContent} data-index="9">

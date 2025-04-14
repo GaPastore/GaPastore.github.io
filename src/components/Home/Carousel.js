@@ -4,11 +4,11 @@ import carousel from '../../styles/components/Carousel.module.css'
 import vignette from '../../styles/components/Vignette.module.css'
 import plainHeader from '../../styles/components/PlainHeader.module.css'
 
-import BgOne from '../../assets/misc/chronolight.png'
+import BgOne from '../../assets/misc/youtube.png'
 import BgTwo from '../../assets/misc/college-dropout-watermark.png'
-import BgThree from '../../assets/misc/joshua-watermark.png'
-import BgFour from '../../assets/misc/ImageEasy.png'
-import BgFive from '../../assets/misc/green-print.png'
+import BgThree from '../../assets/misc/fit-track.png'
+import BgFour from '../../assets/misc/joshua-watermark.png'
+import BgFive from '../../assets/misc/somos-algo.png'
 
 function Carousel(){
 

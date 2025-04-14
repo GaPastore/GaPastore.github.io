@@ -6,7 +6,6 @@ function Header(){
     return(
         <div>
             <div className={styles.introDiv}>
-                <div className={"title oswald-plus " + styles.thisTitle}>APRESENTAÇÃO</div>
                 <div className={styles.holderImg}>
                     <div className={styles.profileImg}></div>
                 </div>
