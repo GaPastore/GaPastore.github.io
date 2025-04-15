@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import styles from '../styles/components/Home/Menu.module.css';
-import ContentSlider from './Home/ContentSlider';
+import vignette from '../styles/components/Vignette.module.css';
 
 function Menu(){
 
@@ -38,6 +38,9 @@ function Menu(){
                 </button>
                 <button className={`${classesText} ${menuHidden ? styles.visible : ''}`} onClick={toggleButton}>
                     <Link to="/desenhos" onClick={scrollTop}>DESENHOS</Link>
+                </button>
+                <button className={`${classesText} ${menuHidden ? styles.visible : ''}`} onClick={toggleButton}>
+                    <Link to="/shot" onClick={scrollTop}>SHOT</Link>
                 </button>
                 <button className={`${classesText} ${menuHidden ? styles.visible : ''}`} onClick={toggleButton}>
                     <Link to="/contato" onClick={scrollTop}>CONTATO</Link>

@@ -19,7 +19,7 @@ function Carousel(){
                 <div className={plainHeader.headerImage} style={{backgroundImage: `url(${urls[0].content})`}}></div>
             </div>
             
-          </div>
+        </div>
     )
 }
 

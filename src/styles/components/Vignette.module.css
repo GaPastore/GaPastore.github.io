@@ -4,11 +4,11 @@
     width: var(--width);
     height: var(--height);
     background-color: rgba(51, 14, 57, .3);
-    box-shadow: 0 0 300px 300px rgba(51, 14, 57, .6) inset;
+    box-shadow: 0 0 300px 300px rgba(51, 14, 57, .8) inset;
     backdrop-filter: blur(8px);
 }
  
 .vignette {
     background-color: rgba(0,0,0,.3);
-    box-shadow: 0 0 300px 300px rgba(0,0,0,.6) inset;
+    box-shadow: 0 0 300px 300px rgba(0,0,0,.8) inset;
 }

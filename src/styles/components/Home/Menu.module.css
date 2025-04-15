@@ -45,7 +45,7 @@
     border: none;
     width: 100%;
     padding: 1.5rem 0;
-    font-size: 7vh;
+    font-size: 6.5vh;
     text-align: center;
     color: #69007900;
     z-index: 1000;
@@ -89,7 +89,7 @@
 }
 
 .menuBg.visible{
-    background-color: rgba(249, 212, 255,.7);
+    background-color: rgba(255, 255, 255,.7);
     visibility: visible;
 }
 
