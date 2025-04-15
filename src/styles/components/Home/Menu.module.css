@@ -1,14 +1,33 @@
-.menuBt{
-    background: url("../../../../public/MenuLight.svg");
+.menuBt {
     position: fixed;
-    width: 7rem;
-    height: 7rem;
+    align-content: center;
+    justify-items: center;
+    width: 5rem;
+    height: 5rem;
     right: 1rem;
     top: 1rem;
     border: none;
-    background-repeat: no-repeat;
-    background-size: cover;
     z-index: 1000;
+}
+
+.top, .bottom {
+    background: url('../../../../public/menuStickLight.svg');
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center;
+    width: 75%;
+    height: 25%;
+    transition: transform .4s ease-in-out;
+}
+
+.top.open {
+    transform: rotate(45deg) translateY(75%);
+    transform-origin: 50% 50%;
+}
+
+.bottom.open {
+    transform: rotate(-45deg) translateY(-75%);
+    transform-origin: 50% 50%;
 }
 
 .menuBox{
@@ -75,9 +94,6 @@
 }
 
 @media screen and (prefers-color-scheme: dark) {
-    .menuBt {
-        background-image: url('../../../../public/MenuDark.svg');
-    }
     .menuBg.visible {
         background-color: rgba(0,0,0,.7);
     }
@@ -90,5 +106,11 @@
         a {
             color: #8BCD45;
         }
+    }
+    .top, .bottom {
+        background: url('../../../../public/menuStickDark.svg');
+        background-repeat: no-repeat;
+        background-size: contain; 
+        background-position: center;
     }
 }

@@ -43,7 +43,10 @@ function Menu(){
                     <Link to="/contato" onClick={scrollTop}>CONTATO</Link>
                 </button>
             </div>
-            <div className={`${styles.menuBt}`} onClick={toggleButton}></div>
+            <div className={styles.menuBt} onClick={toggleButton}>
+                <div className={`${styles.top} ${menuHidden ? styles.open : ''}`}></div>
+                <div className={`${styles.bottom} ${menuHidden ? styles.open : ''}`}></div>
+            </div>
         </div>
     )
 }
