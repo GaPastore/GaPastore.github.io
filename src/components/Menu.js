@@ -39,9 +39,9 @@ function Menu(){
                 <button className={`${classesText} ${menuHidden ? styles.visible : ''}`} onClick={toggleButton}>
                     <Link to="/desenhos" onClick={scrollTop}>DESENHOS</Link>
                 </button>
-                <button className={`${classesText} ${menuHidden ? styles.visible : ''}`} onClick={toggleButton}>
+                {/*<button className={`${classesText} ${menuHidden ? styles.visible : ''}`} onClick={toggleButton}>
                     <Link to="/shot" onClick={scrollTop}>SHOT</Link>
-                </button>
+                </button>*/}
                 <button className={`${classesText} ${menuHidden ? styles.visible : ''}`} onClick={toggleButton}>
                     <Link to="/contato" onClick={scrollTop}>CONTATO</Link>
                 </button>

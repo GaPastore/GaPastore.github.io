@@ -36,3 +36,12 @@
         background-color: #8BCD45;
     }
 }
+
+@media (max-width: 1280px) {
+    .drawImg {
+        height: 26rem;
+    }
+    .drawImg:hover {
+        height: 28rem;
+    }
+}

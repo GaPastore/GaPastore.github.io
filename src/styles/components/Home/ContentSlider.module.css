@@ -47,11 +47,17 @@
     justify-items: end;
 }
 
-.active:hover{
-    width: 100%;
-    aspect-ratio: 3.06 / 2; 
-    .sliderOverlay, .sliderInside {
-        opacity: 1;
+@media (hover:hover) {
+    #leftButton:hover, #rightButton:hover {
+        width: 10vh;
+    }
+    
+    .active:hover{
+        width: 100%;
+        aspect-ratio: 3.06 / 2; 
+        .sliderOverlay, .sliderInside {
+            opacity: 1;
+        }
     }
 }
 
@@ -83,9 +89,6 @@
     transition: width 0.4s;
 }
 
-#leftButton:hover, #rightButton:hover {
-    width: 10vh;
-}
 
 #leftButton {
     -webkit-transform: scaleX(-1);
@@ -156,7 +159,7 @@
     border-radius: 5rem;
     width: 100%;
     height: 100%;
-    background-image: url('../../../assets/slider/purple-overlay.png');
+    background: linear-gradient(90deg, #330E3900 0%, #330E39 50%);
     background-size: contain;
     position: absolute;
     z-index: 1;
@@ -180,12 +183,51 @@
 
 @media screen and (prefers-color-scheme: dark) {
     .sliderOverlay {
-        background-image: url('../../../assets/slider/green-overlay.png');
+        background: linear-gradient(90deg, #D5FFA900 0%, #D5FFA9 50%);
     }
     #leftButton, #rightButton {
         background-image: url("../../../../public/ArrowDark.svg");
     }
     .sliderInside, .link {
         color: #101010;
+    }
+}
+
+@media (max-width: 1280px) {
+    .sliderInside {
+        font-size: min(1.3vw, 30px);
+    }
+}
+
+@media (max-width: 500px) {
+    .sliderInside {
+        font-size: min(1.3vw, 30px);
+    }
+    .sliderContent { 
+        aspect-ratio: 1 / 4;
+        margin: 0 .5vh;
+    }
+    #leftButton:active, #rightButton:active {
+        width: 10vh;
+    }
+    .sliderOverlay, .sliderContent {
+        border-radius: 2vh;
+    }
+    .active {
+        width: 100%;
+        .sliderOverlay, .sliderInside {
+            opacity: 1;
+        }
+    }
+    .sliderOverlay {
+        background: linear-gradient(180deg, #D5FFA900 0%, #D5FFA9 60%);
+    }
+    .sliderInside {
+        width: 95%;
+        height: 90%;
+        align-content: end;
+        left: 0;
+        top: 50%;
+        font-size: min(2vw, 30px);
     }
 }

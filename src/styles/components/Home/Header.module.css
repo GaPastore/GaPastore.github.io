@@ -5,6 +5,7 @@
     align-content: center;
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
 
 .introText {
@@ -64,4 +65,45 @@
     .holderImg {
         background-color: #101010;
     }
+}
+
+@media (max-width: 1280px) {
+    .introText {
+        font-size: 2.6vh;
+    }
+    
+    .holderImg {
+        height: 65%;
+        width: 55rem;
+        right: 30%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+@media (max-width: 500px) {
+    .introText {
+        font-size: 2.6vh;
+    }
+    
+    .holderImg {
+        height: 25%;
+        width: 30rem;
+        border-radius: 0;
+        top: 10%;
+    }
+    
+    .profileImg {
+        aspect-ratio: 4 / 3;
+    }
+
+    .introText {
+        width: 90%;
+        left: 5%;
+        text-align: center;
+        font-size: 1.8vh;
+        top: 25%;
+        letter-spacing: .6vh;
+    }
+
 }
