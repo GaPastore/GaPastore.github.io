@@ -91,6 +91,7 @@
         width: 30rem;
         border-radius: 0;
         top: 10%;
+        left: -50%;
     }
     
     .profileImg {

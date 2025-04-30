@@ -46,8 +46,9 @@
   }
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 500px) {
   .headerText {
-    font-size: 2.6rem;
+    font-size: 1.6rem;
+    letter-spacing: 6px;
   }
 }

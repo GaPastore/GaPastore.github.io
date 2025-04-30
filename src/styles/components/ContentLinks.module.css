@@ -139,3 +139,22 @@
         font-size: large;
     }
 }
+
+@media (max-width: 500px) {
+    .introDiv {
+        height: 260vh;
+    }
+    .flexDiv {
+        grid-template-columns: auto;
+    }
+    .drawImg, .imgBox {
+        width: 10rem;
+        padding: 2rem;
+        border-radius: 2rem;
+        aspect-ratio: 1 / 1;
+        font-size: small;
+        justify-items: end;
+        opacity: 1;
+        letter-spacing: 2px;
+    }
+}
