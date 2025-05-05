@@ -71,7 +71,6 @@
     .introText {
         font-size: 2.6vh;
     }
-    
     .holderImg {
         height: 65%;
         width: 55rem;
@@ -86,16 +85,24 @@
         font-size: 2.6vh;
     }
     
+    .profileImg {
+        position: absolute;
+        height: 100%;
+        aspect-ratio: 1 / 1;
+        top: 0;
+        right: 0;
+    }
+
     .holderImg {
         height: 25%;
-        width: 30rem;
+        width: 100%;
         border-radius: 0;
-        top: 10%;
-        left: -50%;
+        top: -5%;
     }
-    
-    .profileImg {
-        aspect-ratio: 4 / 3;
+
+    .profileImg, .holderImg {
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .introText {
