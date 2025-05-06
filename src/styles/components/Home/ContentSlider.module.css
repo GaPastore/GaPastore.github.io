@@ -217,7 +217,7 @@
         }
     }
     .sliderOverlay {
-        background: linear-gradient(180deg, #D5FFA900 0%, #D5FFA9 60%);
+        background: linear-gradient(180deg, #330E3900 0%, #330E39 50%);
     }
     .sliderInside {
         width: 95%;
@@ -225,7 +225,12 @@
         align-content: end;
         left: 0;
         top: 50%;
-        font-size: min(3vw, 20px);
+        font-size: min(3.3vw, 30px);
         letter-spacing: 3px;
+    }
+    @media screen and (prefers-color-scheme: dark) {   
+        .sliderOverlay {
+            background: linear-gradient(180deg, #D5FFA900 0%, #D5FFA9 50%);
+        }
     }
 }

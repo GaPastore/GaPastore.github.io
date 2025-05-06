@@ -45,3 +45,12 @@
         height: 28rem;
     }
 }
+
+@media (max-width: 500px) {
+    .drawImg {
+        height: 20rem;
+    }
+    .drawImg:hover {
+        height: 20rem;
+    }
+}

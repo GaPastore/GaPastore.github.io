@@ -37,7 +37,6 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    filter: brightness(.8);
     position: relative;
 }
 
@@ -71,5 +70,32 @@
     }
     #github {
         background-image: url('../../../assets/misc/github dark.png');
+    }
+}
+
+
+@media (max-width: 500px) {
+    .profileImg {
+        height: 5.7rem;
+    }
+    .socialBox {
+        align-items: center;
+        justify-items: center;
+        margin: 0 2rem 0 2rem;
+        grid-template-columns: 1fr;
+        grid-row-gap: 1rem;
+    }
+    .introText {
+        font-size: 2.3vh;
+        letter-spacing: 4px;
+        padding-bottom: 3rem;
+    }
+    .introText:hover {
+        filter: brightness(1);
+    }
+    @media screen and (prefers-color-scheme: dark) {   
+        .introText:hover {
+            filter: brightness(1);
+        }
     }
 }
