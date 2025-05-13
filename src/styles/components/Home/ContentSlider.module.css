@@ -193,13 +193,13 @@
     }
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1366px) {
     .sliderInside {
         font-size: min(1.3vw, 30px);
     }
 }
 
-@media (max-width: 500px) {
+@media (any-pointer: coarse) {
     .sliderContent { 
         aspect-ratio: 1 / 4;
         margin: 0 .5vh;
@@ -225,8 +225,22 @@
         align-content: end;
         left: 0;
         top: 50%;
-        font-size: min(3.3vw, 30px);
         letter-spacing: 3px;
+    }
+    @media (max-width: 1366px) {
+        .sliderInside {
+            font-size: min(1.8vw, 30px);
+        }
+    }
+    @media (max-width: 1100px) {
+        .sliderInside {
+            font-size: min(2.8vw, 30px);
+        }
+    }
+    @media (max-width: 700px) {
+        .sliderInside {
+            font-size: min(3.5vw, 30px);
+        }
     }
     @media screen and (prefers-color-scheme: dark) {   
         .sliderOverlay {

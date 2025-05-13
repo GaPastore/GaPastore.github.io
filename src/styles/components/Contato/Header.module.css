@@ -73,6 +73,13 @@
     }
 }
 
+@media (max-width: 1366px) {
+    .introText {
+        font-size: 2.5rem;
+        letter-spacing: 4px;
+        padding-bottom: 3rem;
+    }
+}
 
 @media (max-width: 500px) {
     .profileImg {

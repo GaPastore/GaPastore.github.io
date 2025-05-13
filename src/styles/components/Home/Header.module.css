@@ -67,7 +67,7 @@
     }
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1366px) {
     .introText {
         font-size: 2.6vh;
     }
@@ -80,7 +80,7 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (any-pointer: coarse) {
     .introText {
         font-size: 2.6vh;
     }
@@ -94,7 +94,6 @@
     }
 
     .holderImg {
-        height: 25%;
         width: 100%;
         border-radius: 0;
         top: -5%;
@@ -110,8 +109,16 @@
         left: 5%;
         text-align: center;
         font-size: 1.8vh;
-        top: 25%;
         letter-spacing: .6vh;
+    }
+
+    @media (max-width: 1100px) {
+        .holderImg {
+            height: 50%;
+        }
+        .introText {
+            top: 15%;
+        }
     }
 
 }

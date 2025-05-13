@@ -13,6 +13,7 @@ function Header(){
                     <div className={styles.drawImg} id={styles.imageasy}><a className={styles.imgBox + " oswald-geral"} href='https://github.com/GiuliaNogoliver/estruturas_matematicas/tree/branch-final' target='_blank'>ImagEasy - Site em Angular 🔗</a></div>
                     <div className={styles.drawImg} id={styles.curriculumAI}><a className={styles.imgBox + " oswald-geral"} href='https://github.com/Curriculum-Vitae-AI' target='_blank'>Curriculum AI - Site em React 🔗</a></div>
                     <div className={styles.drawImg} id={styles.greenPrint}><a className={styles.imgBox + " oswald-geral"} href='https://github.com/GaPastore/A3-Java' target='_blank'>Green Print - App em Java 🔗</a></div>
+                    <div className={styles.drawImg} id={styles.theDomeOfHope}><a className={styles.imgBox + " oswald-geral"} href='https://gapastore.itch.io/the-dome-of-hope' target='_blank'>The Dome of Hope - Jogo 2D educacional 🔗</a></div>
                 </div>
             </div>
         </div>

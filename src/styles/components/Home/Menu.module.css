@@ -115,7 +115,7 @@
     }
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1366px) {
     .menuBt {
         width: 4rem;
         height: 4rem;
@@ -130,7 +130,7 @@
     
 }
 
-@media (max-width: 500px) {
+@media (any-pointer: coarse) {
     .menuBt {
         width: 4rem;
         height: 4rem;
