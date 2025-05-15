@@ -148,14 +148,14 @@ function ContentSlider() {
                         <div className={styles.sliderInside + " oswald-geral"}>
                             Meu currículo inclui o desenvolvimento de alguns jogos de pequeno porte, um desses exemplos
                             é o Micescape: um jogo 2D desenvolvido em Unity com elementos de terror. Para ver esse e mais
-                            projetos, <Link className={styles.link} to="/ciencia_da_computacao" onClick={scrollTop}>clique aqui.</Link>
+                            projetos, <Link className={styles.link} to="/portfolio-gabriel-pastore/ciencia_da_computacao" onClick={scrollTop}>clique aqui.</Link>
                         </div>
                     </div>
                     <div className={styles.sliderContent} data-index="1">
                         <div className={styles.sliderOverlay}></div>
                         <div className={styles.sliderInside  + " oswald-geral"}>
                             Há muitos anos tenho como hobby as artes, principalmente através de desenhos - sejam eles físicos
-                            ou digitais. Se você quer ver algumas das artes digitais que já fiz durante o tempo, <Link className={styles.link} to="/desenhos" onClick={scrollTop}>clique aqui.</Link>
+                            ou digitais. Se você quer ver algumas das artes digitais que já fiz durante o tempo, <Link className={styles.link} to="/portfolio-gabriel-pastore/desenhos" onClick={scrollTop}>clique aqui.</Link>
                         </div>
                     </div>
                     <div className={styles.sliderContent} data-index="2">
@@ -163,7 +163,7 @@ function ContentSlider() {
                         <div className={styles.sliderInside  + " oswald-geral"}>
                             Desde 2018 tenho estudado programação e outras questões relacionadas à informática, com diversos projetos para demonstração de minhas habilidades. O melhor exemplo para
                             isso é esse site: todo seu planejamento e desenvolvimento foi feito por mim. 
-                            Para acessar esses projetos, <Link className={styles.link} to="/ciencia_da_computacao" onClick={scrollTop}>clique aqui.</Link>
+                            Para acessar esses projetos, <Link className={styles.link} to="/portfolio-gabriel-pastore/ciencia_da_computacao" onClick={scrollTop}>clique aqui.</Link>
                         </div>
                     </div>
                     <div className={styles.sliderContent} data-index="3">
@@ -172,7 +172,7 @@ function ContentSlider() {
                             Desde que comecei a estudar na área de audiovisual, tenho como hobby a edição de imagens e vídeos, produzindo 
                             para amigos, faculdade, trabalho ou apenas para mim. Um exemplo 
                             desses projetos é um canal do YouTube em que posto vídeos para me divertir e 
-                            testar minhas habilidades como editor. Para acessá-lo ou ver outros projetos em audiovisual, <Link className={styles.link} to="/audiovisual" onClick={scrollTop}>clique aqui.</Link>
+                            testar minhas habilidades como editor. Para acessá-lo ou ver outros projetos em audiovisual, <Link className={styles.link} to="/portfolio-gabriel-pastore/audiovisual" onClick={scrollTop}>clique aqui.</Link>
                         </div>
                     </div>
                     <div className={styles.sliderContent} data-index="4">
@@ -180,7 +180,7 @@ function ContentSlider() {
                         <div className={styles.sliderInside  + " oswald-geral"}>
                             Conforme meus estudos em audiovisual e programação avançaram, 
                             desenvolvi elementos visuais, logos e interfaces para diversos projetos. Isso pode ser 
-                            visto no Instagram de "Somos Algo?", em que desenvolvi as artes e vídeos de cada post. Para ver esse e mais projetos em audiovisual, <Link className={styles.link} to="/audiovisual" onClick={scrollTop}>clique aqui.</Link>
+                            visto no Instagram de "Somos Algo?", em que desenvolvi as artes e vídeos de cada post. Para ver esse e mais projetos em audiovisual, <Link className={styles.link} to="/portfolio-gabriel-pastore/audiovisual" onClick={scrollTop}>clique aqui.</Link>
                         </div>
                     </div>
                     <div className={styles.sliderContent} data-index="5">
@@ -188,14 +188,14 @@ function ContentSlider() {
                         <div className={styles.sliderInside  + " oswald-geral"}>
                             Meu currículo inclui o desenvolvimento de alguns jogos de pequeno porte, um desses exemplos
                             é o Micescape: um jogo 2D desenvolvido em Unity com elementos de terror. Para ver esse e mais
-                            projetos, <Link className={styles.link} to="/ciencia_da_computacao" onClick={scrollTop}>clique aqui.</Link>
+                            projetos, <Link className={styles.link} to="/portfolio-gabriel-pastore/ciencia_da_computacao" onClick={scrollTop}>clique aqui.</Link>
                         </div>
                     </div>
                     <div className={styles.sliderContent} data-index="6">
                         <div className={styles.sliderOverlay}></div>
                         <div className={styles.sliderInside  + " oswald-geral"}>
                             Há muitos anos tenho como hobby as artes, principalmente através de desenhos - sejam eles físicos
-                            ou digitais. Se você quer ver algumas das artes digitais que já fiz durante o tempo, <Link className={styles.link} to="/desenhos" onClick={scrollTop}>clique aqui.</Link>
+                            ou digitais. Se você quer ver algumas das artes digitais que já fiz durante o tempo, <Link className={styles.link} to="/portfolio-gabriel-pastore/desenhos" onClick={scrollTop}>clique aqui.</Link>
                         </div>
                     </div>
                     <div className={styles.sliderContent} data-index="7">
@@ -203,7 +203,7 @@ function ContentSlider() {
                         <div className={styles.sliderInside  + " oswald-geral"}>
                             Desde 2018 tenho estudado programação e outras questões relacionadas à informática, possuindo
                             diversos projetos acadêmicos para demonstração de minhas habilidades. Para acessar esses
-                            projetos, <Link className={styles.link} to="/ciencia_da_computacao" onClick={scrollTop}>clique aqui.</Link>
+                            projetos, <Link className={styles.link} to="/portfolio-gabriel-pastore/ciencia_da_computacao" onClick={scrollTop}>clique aqui.</Link>
                         </div>
                     </div>
                     <div className={styles.sliderContent} data-index="8">
@@ -212,19 +212,15 @@ function ContentSlider() {
                             Desde que comecei a estudar na área de audiovisual, tenho como hobby a edição de imagens e vídeos, produzindo 
                             para amigos, faculdade, trabalho ou apenas para mim. Um exemplo 
                             desses projetos é um canal do YouTube em que posto vídeos para me divertir e 
-                            testar minhas habilidades como editor. Para acessá-lo ou ver outros projetos em audiovisual, <Link className={styles.link} to="/audiovisual" onClick={scrollTop}>clique aqui.</Link>
+                            testar minhas habilidades como editor. Para acessá-lo ou ver outros projetos em audiovisual, <Link className={styles.link} to="/portfolio-gabriel-pastore/audiovisual" onClick={scrollTop}>clique aqui.</Link>
                         </div>
                     </div>
                     <div className={styles.sliderContent} data-index="9">
                         <div className={styles.sliderOverlay}></div>
                         <div className={styles.sliderInside  + " oswald-geral"}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum ante eget quam 
-                            condimentum pretium. Fusce aliquam fringilla dui ut venenatis. Mauris tristique 
-                            mattis ligula eu viverra. Morbi justo purus, luctus et imperdiet nec, accumsan in 
-                            ex. Donec ut nibh et risus consequat venenatis sed a est. In rhoncus, nunc at faucibus 
-                            pulvinar, ex nisl aliquet elit, eu porta nunc urna id urna. Fusce at ipsum euismod, 
-                            iaculis mauris id, facilisis turpis. Nulla ac dapibus quam, ut vulputate leo. Pellentesque 
-                            nec ultricies sem, et vulputate lacus. Cras at ultricies ipsum. Cras id consequat erat.
+                            Conforme meus estudos em audiovisual e programação avançaram, 
+                            desenvolvi elementos visuais, logos e interfaces para diversos projetos. Isso pode ser 
+                            visto no Instagram de "Somos Algo?", em que desenvolvi as artes e vídeos de cada post. Para ver esse e mais projetos em audiovisual, <Link className={styles.link} to="/portfolio-gabriel-pastore/audiovisual" onClick={scrollTop}>clique aqui.</Link>
                         </div>
                     </div>
                 </div>
