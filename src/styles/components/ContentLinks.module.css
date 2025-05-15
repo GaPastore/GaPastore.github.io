@@ -182,7 +182,7 @@
             font-size: larger;
         }
     }
-    @media (max-width: 1100px) {
+    @media (max-width: 700px) {
         .drawImg, .imgBox {
             width: 15rem;
             aspect-ratio: 1.5 / 1;

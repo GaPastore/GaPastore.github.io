@@ -121,4 +121,13 @@
         }
     }
 
+    @media (max-width: 500px) {
+        .holderImg {
+            height: 25%;
+        }
+        .introText {
+            top: 25%;
+        }
+    }
+
 }
