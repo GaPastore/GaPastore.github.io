@@ -28,6 +28,38 @@
     background-image: url('../../../assets/misc/nika-watermark.png');
 }
 
+#bill {
+    background-image: url('../../../assets/misc/bill-watermark.png');
+}
+
+#deltarune {
+    background-image: url('../../../assets/misc/deltarune-watermark.png');
+}
+
+#homemAranha {
+    background-image: url('../../../assets/misc/homem-aranha-watermark.png');
+}
+
+#jotaro {
+    background-image: url('../../../assets/misc/jotaro-watermark.png');
+}
+
+#kiraQueen {
+    background-image: url('../../../assets/misc/kira-queen-watermark.png');
+}
+
+#kirby {
+    background-image: url('../../../assets/misc/kirby-watermark.png');
+}
+
+#shinji {
+    background-image: url('../../../assets/misc/shinji-watermark.png');
+}
+
+#yamato {
+    background-image: url('../../../assets/misc/yamato-watermark.jpg');
+}
+
 @media screen and (prefers-color-scheme: dark) {
     .introText{
         color: #101010;

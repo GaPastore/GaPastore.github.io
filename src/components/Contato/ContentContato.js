@@ -19,6 +19,10 @@ function Header(){
                     <a className={"oswald-plus " + styles.introText} href='https://github.com/GaPastore' target='_blank'>
                         GaPastore - GitHub 🔗
                     </a>
+                    <div id={styles.itchIo} className={styles.profileImg}></div>
+                    <a className={"oswald-plus " + styles.introText} href='https://gapastore.itch.io/' target='_blank'>
+                        GaPastore - itch.io 🔗
+                    </a>
                 </div>
             </div>
         </div>

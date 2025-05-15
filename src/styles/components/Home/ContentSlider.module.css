@@ -195,7 +195,7 @@
 
 @media (max-width: 1366px) {
     .sliderInside {
-        font-size: min(1.3vw, 30px);
+        font-size: min(1.1vw, 30px);
     }
 }
 
