@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio-gabriel-pastore/static/css/main.3767be9c.css",
+    "main.css": "/portfolio-gabriel-pastore/static/css/main.3a03dcca.css",
     "main.js": "/portfolio-gabriel-pastore/static/js/main.06dd749d.js",
     "static/js/453.1fa56f78.chunk.js": "/portfolio-gabriel-pastore/static/js/453.1fa56f78.chunk.js",
     "static/media/kira-queen-watermark.png": "/portfolio-gabriel-pastore/static/media/kira-queen-watermark.cfd8cb7c6cb6a264f1f7.png",
@@ -38,12 +38,12 @@
     "static/media/menuStickDark.svg": "/portfolio-gabriel-pastore/static/media/menuStickDark.50feb68f1653f34ae977.svg",
     "static/media/ArrowDark.svg": "/portfolio-gabriel-pastore/static/media/ArrowDark.1281c870e6756c17b6a5.svg",
     "static/media/ArrowLight.svg": "/portfolio-gabriel-pastore/static/media/ArrowLight.2f4444f8fba2f8487fc9.svg",
-    "main.3767be9c.css.map": "/portfolio-gabriel-pastore/static/css/main.3767be9c.css.map",
+    "main.3a03dcca.css.map": "/portfolio-gabriel-pastore/static/css/main.3a03dcca.css.map",
     "main.06dd749d.js.map": "/portfolio-gabriel-pastore/static/js/main.06dd749d.js.map",
     "453.1fa56f78.chunk.js.map": "/portfolio-gabriel-pastore/static/js/453.1fa56f78.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3767be9c.css",
+    "static/css/main.3a03dcca.css",
     "static/js/main.06dd749d.js"
   ]
 }
