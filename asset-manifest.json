@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/gapastore.github.io/static/css/main.73e5d45c.css",
-    "main.js": "/gapastore.github.io/static/js/main.978b3cf0.js",
+    "main.js": "/gapastore.github.io/static/js/main.20934789.js",
     "static/js/453.1fa56f78.chunk.js": "/gapastore.github.io/static/js/453.1fa56f78.chunk.js",
     "static/media/kira-queen-watermark.png": "/gapastore.github.io/static/media/kira-queen-watermark.cfd8cb7c6cb6a264f1f7.png",
     "static/media/joshua-watermark.png": "/gapastore.github.io/static/media/joshua-watermark.144b46ea1e364f0af281.png",
@@ -39,11 +39,11 @@
     "static/media/ArrowDark.svg": "/gapastore.github.io/static/media/ArrowDark.1281c870e6756c17b6a5.svg",
     "static/media/ArrowLight.svg": "/gapastore.github.io/static/media/ArrowLight.2f4444f8fba2f8487fc9.svg",
     "main.73e5d45c.css.map": "/gapastore.github.io/static/css/main.73e5d45c.css.map",
-    "main.978b3cf0.js.map": "/gapastore.github.io/static/js/main.978b3cf0.js.map",
+    "main.20934789.js.map": "/gapastore.github.io/static/js/main.20934789.js.map",
     "453.1fa56f78.chunk.js.map": "/gapastore.github.io/static/js/453.1fa56f78.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.73e5d45c.css",
-    "static/js/main.978b3cf0.js"
+    "static/js/main.20934789.js"
   ]
 }
