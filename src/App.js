@@ -12,7 +12,7 @@ function App() {
     <Router>
       <Menu/>
       <Routes>
-        <Route path='/portfolio-gabriel-pastore/home' element={<Home />} />
+        <Route path='/portfolio-gabriel-pastore' element={<Home />} />
         <Route path='/portfolio-gabriel-pastore/audiovisual' element={<Audiovisual />} />
         <Route path='/portfolio-gabriel-pastore/ciencia_da_computacao' element={<CienciaDaComputacao />} />
         <Route path='/portfolio-gabriel-pastore/desenhos' element={<Desenhos />} />

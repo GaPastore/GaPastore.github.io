@@ -28,7 +28,7 @@ function Menu(){
             <div className={`${styles.menuBg} ${menuHidden ? styles.visible : ''}`}></div>
             <div className={`${styles.menuBox} ${menuHidden ? styles.visible : ''}`}>
                 <button className={`${classesText} ${menuHidden ? styles.visible : ''}`} onClick={toggleButton}>
-                    <Link to="/portfolio-gabriel-pastore/home" onClick={homeOnClick}>PÁGINA INICIAL</Link>
+                    <Link to="/portfolio-gabriel-pastore" onClick={homeOnClick}>PÁGINA INICIAL</Link>
                 </button>
                 <button className={`${classesText} ${menuHidden ? styles.visible : ''}`} onClick={toggleButton}>
                     <Link to="/portfolio-gabriel-pastore/audiovisual" onClick={scrollTop}>PROJETOS EM AUDIOVISUAL</Link>
