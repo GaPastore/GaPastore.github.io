@@ -12,7 +12,7 @@ function App() {
     <Router>
       <Menu/>
       <Routes>
-        <Route path='/gapastore.github.io' element={<Home />} />
+        <Route path='/' element={<Home />} />
         <Route path='/audiovisual' element={<Audiovisual />} />
         <Route path='/ciencia_da_computacao' element={<CienciaDaComputacao />} />
         <Route path='/desenhos' element={<Desenhos />} />
