@@ -1,13 +1,14 @@
 import { useEffect } from 'react';
 import plainHeader from '../../styles/components/PlainHeader.module.css'
 import vignette from '../../styles/components/Vignette.module.css'
+import Bg from '../../assets/misc/youtube.png'
 
 function Carousel(){
 
     const urls = [
       {
         id: 1,
-        content: 'https://picsum.photos/seed/1/200/300'
+        content: Bg
       }
     ];
 
