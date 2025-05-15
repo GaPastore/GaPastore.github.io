@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" id="faviconID" href="%PUBLIC_URL%/favlight.svg" />
+    <link rel="icon" id="faviconID" href="./public/favlight.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -21,10 +21,10 @@
     
     const changeFavicon = () => {
       if (isDark.matches) {
-        faviconTag.href = "%PUBLIC_URL%/favdark.svg";
+        faviconTag.href = "./public/favdark.svg";
       }
       else {
-        faviconTag.href = "%PUBLIC_URL%/favlight.svg";
+        faviconTag.href = "./public/favlight.svg";
       }
     };
     
