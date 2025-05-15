@@ -28,22 +28,22 @@ function Menu(){
             <div className={`${styles.menuBg} ${menuHidden ? styles.visible : ''}`}></div>
             <div className={`${styles.menuBox} ${menuHidden ? styles.visible : ''}`}>
                 <button className={`${classesText} ${menuHidden ? styles.visible : ''}`} onClick={toggleButton}>
-                    <Link to="/" onClick={homeOnClick}>PÁGINA INICIAL</Link>
+                    <Link to="/portfolio-gabriel-pastore/home" onClick={homeOnClick}>PÁGINA INICIAL</Link>
                 </button>
                 <button className={`${classesText} ${menuHidden ? styles.visible : ''}`} onClick={toggleButton}>
-                    <Link to="/audiovisual" onClick={scrollTop}>PROJETOS EM AUDIOVISUAL</Link>
+                    <Link to="/portfolio-gabriel-pastore/audiovisual" onClick={scrollTop}>PROJETOS EM AUDIOVISUAL</Link>
                 </button>
                 <button className={`${classesText} ${menuHidden ? styles.visible : ''}`} onClick={toggleButton}>
-                    <Link to="/ciencia_da_computacao" onClick={scrollTop}>CIÊNCIA DA COMPUTAÇÃO</Link>
+                    <Link to="/portfolio-gabriel-pastore/ciencia_da_computacao" onClick={scrollTop}>CIÊNCIA DA COMPUTAÇÃO</Link>
                 </button>
                 <button className={`${classesText} ${menuHidden ? styles.visible : ''}`} onClick={toggleButton}>
-                    <Link to="/desenhos" onClick={scrollTop}>DESENHOS</Link>
+                    <Link to="/portfolio-gabriel-pastore/desenhos" onClick={scrollTop}>DESENHOS</Link>
                 </button>
                 {/*<button className={`${classesText} ${menuHidden ? styles.visible : ''}`} onClick={toggleButton}>
-                    <Link to="/shot" onClick={scrollTop}>SHOT</Link>
+                    <Link to="/portfolio-gabriel-pastore/shot" onClick={scrollTop}>SHOT</Link>
                 </button>*/}
                 <button className={`${classesText} ${menuHidden ? styles.visible : ''}`} onClick={toggleButton}>
-                    <Link to="/contato" onClick={scrollTop}>CONTATO</Link>
+                    <Link to="/portfolio-gabriel-pastore/contato" onClick={scrollTop}>CONTATO</Link>
                 </button>
             </div>
             <div className={styles.menuBt} onClick={toggleButton}>

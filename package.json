@@ -1,7 +1,7 @@
 {
   "name": "portfolio-project",
   "version": "0.1.0",
-  "homepage": "https://gapastore.github.io/gapastore.github.io",
+  "homepage": "https://gapastore.github.io/portfolio-gabriel-pastore",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
