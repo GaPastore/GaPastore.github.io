@@ -20,7 +20,7 @@ function Menu(){
 
     const homeOnClick = () => {
         scrollTop()
-        window.location.replace("/")
+        window.location.replace("/portfolio-gabriel-pastore")
     }
 
     return(
