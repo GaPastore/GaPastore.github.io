@@ -12,10 +12,6 @@
     transition: height .4s ease-in-out;
 }
 
-.drawImg:hover {
-    height: 35rem;
-}
-
 #tcd {
     background-image: url('../../../assets/misc/college-dropout-watermark.png');
 }
@@ -73,16 +69,10 @@
     .drawImg {
         height: 26rem;
     }
-    .drawImg:hover {
-        height: 28rem;
-    }
 }
 
 @media (max-width: 500px) {
     .drawImg {
-        height: 20rem;
-    }
-    .drawImg:hover {
         height: 20rem;
     }
 }

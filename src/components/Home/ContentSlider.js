@@ -1,4 +1,5 @@
 import useState from 'react-usestateref';
+import { useEffect } from 'react';
 import { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import styles from "../../styles/components/Home/ContentSlider.module.css"
@@ -63,7 +64,7 @@ function ContentSlider() {
         window.scrollTo(0, 0)
     }
 
-    window.onload = () => {
+    useEffect(() => {
 
         divRef.current.style.animationDelay = '0s'
         divRef.current.style.animationDirection = 'normal'
@@ -71,7 +72,7 @@ function ContentSlider() {
         varSlide()
         setnIndex(0)
         
-    }
+    }, [])
 
     const animReset = () => {
 

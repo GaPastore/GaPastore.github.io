@@ -141,7 +141,7 @@
 .sliderInside {
     width: 40%;
     height: 85%;
-    font-size: min(1.8vw, 30px);
+    font-size: min(1.3vw, 30px);
     letter-spacing: .5rem;
     position: absolute;
     text-align: right;

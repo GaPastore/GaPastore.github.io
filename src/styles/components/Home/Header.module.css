@@ -121,6 +121,15 @@
         }
     }
 
+    @media (max-width: 700px) {
+        .holderImg {
+            height: 35%;
+        }
+        .introText {
+            top: 22.5%;
+        }
+    }
+
     @media (max-width: 500px) {
         .holderImg {
             height: 25%;
