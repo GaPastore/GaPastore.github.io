@@ -114,17 +114,14 @@
 
     @media (max-width: 1100px) {
         .holderImg {
-            height: 50%;
+            height: 35%;
         }
         .introText {
-            top: 15%;
+            top: 25%;
         }
     }
 
     @media (max-width: 700px) {
-        .holderImg {
-            height: 35%;
-        }
         .introText {
             top: 22.5%;
         }
