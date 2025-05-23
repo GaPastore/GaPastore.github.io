@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-gabriel-pastore/static/css/main.5235d179.css",
-    "main.js": "/portfolio-gabriel-pastore/static/js/main.84655b0c.js",
+    "main.css": "/portfolio-gabriel-pastore/static/css/main.22100f8d.css",
+    "main.js": "/portfolio-gabriel-pastore/static/js/main.b887bc93.js",
     "static/js/453.1fa56f78.chunk.js": "/portfolio-gabriel-pastore/static/js/453.1fa56f78.chunk.js",
     "static/media/kira-queen-watermark.png": "/portfolio-gabriel-pastore/static/media/kira-queen-watermark.cfd8cb7c6cb6a264f1f7.png",
     "static/media/joshua-watermark.png": "/portfolio-gabriel-pastore/static/media/joshua-watermark.144b46ea1e364f0af281.png",
@@ -38,12 +38,12 @@
     "static/media/menuStickDark.svg": "/portfolio-gabriel-pastore/static/media/menuStickDark.50feb68f1653f34ae977.svg",
     "static/media/ArrowDark.svg": "/portfolio-gabriel-pastore/static/media/ArrowDark.1281c870e6756c17b6a5.svg",
     "static/media/ArrowLight.svg": "/portfolio-gabriel-pastore/static/media/ArrowLight.2f4444f8fba2f8487fc9.svg",
-    "main.5235d179.css.map": "/portfolio-gabriel-pastore/static/css/main.5235d179.css.map",
-    "main.84655b0c.js.map": "/portfolio-gabriel-pastore/static/js/main.84655b0c.js.map",
+    "main.22100f8d.css.map": "/portfolio-gabriel-pastore/static/css/main.22100f8d.css.map",
+    "main.b887bc93.js.map": "/portfolio-gabriel-pastore/static/js/main.b887bc93.js.map",
     "453.1fa56f78.chunk.js.map": "/portfolio-gabriel-pastore/static/js/453.1fa56f78.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5235d179.css",
-    "static/js/main.84655b0c.js"
+    "static/css/main.22100f8d.css",
+    "static/js/main.b887bc93.js"
   ]
 }
