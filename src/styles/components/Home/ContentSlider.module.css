@@ -199,7 +199,8 @@
 
 @media (max-width: 1366px) {
     .sliderInside {
-        font-size: min(1.1vw, 30px);
+        font-size: min(1.8vw, 30px);
+        letter-spacing: 0.15rem;
     }
 }
 
@@ -241,6 +242,11 @@
     @media (max-width: 1100px) {
         .sliderInside {
             font-size: min(4.6vw, 60px);
+        }
+    }
+    @media (max-width: 1030px) {
+        .sliderInside {
+            font-size: min(3.5vw, 60px);
         }
     }
     @media (max-width: 700px) {

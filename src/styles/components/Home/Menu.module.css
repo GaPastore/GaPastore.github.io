@@ -46,6 +46,7 @@
     width: 100%;
     padding: 1.5rem 0;
     font-size: 6.5vh;
+    letter-spacing: 0.7rem;
     text-align: center;
     color: #69007900;
     z-index: 1000;
@@ -131,14 +132,26 @@
 }
 
 @media (any-pointer: coarse) {
-    .menuBt {
-        width: 4rem;
-        height: 4rem;
+
+    @media (max-width: 1080px) {
+        .menuBt {
+            width: 8rem;
+            height: 8rem;
+        }
+        .menuText, .menuText:link, .menuText:visited {
+            padding: 1rem 0;
+            font-size: 3vh;
+        }
     }
 
-    .menuText, .menuText:link, .menuText:visited {
-        padding: 1rem 0;
-        font-size: 3vh;
+    @media (max-width: 900px) {
+        .menuBt {
+            width: 4rem;
+            height: 4rem;
+        }
+        .menuText, .menuText:link, .menuText:visited {
+            letter-spacing: 0.6rem;
+        }
     }
     
 }

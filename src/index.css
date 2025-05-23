@@ -54,7 +54,7 @@ code {
 }
 
 .oswald-geral, .lexend-geral{
-  letter-spacing: 0.8rem;
+  letter-spacing: 0.15rem;
 }
 
 @media screen and (prefers-color-scheme: dark) {
