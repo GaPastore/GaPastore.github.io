@@ -127,6 +127,10 @@
     background-image: url('../../assets/misc/the-dome-of-hope.png');
 }
 
+#equacionando {
+    background-image: url('../../assets/misc/equacionando.png');
+}
+
 .profileImg, .introText {
     padding: .3rem;
     top: 60%;
