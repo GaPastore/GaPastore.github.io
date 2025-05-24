@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-gabriel-pastore/static/css/main.0a20220a.css",
-    "main.js": "/portfolio-gabriel-pastore/static/js/main.f552eb0c.js",
+    "main.css": "/portfolio-gabriel-pastore/static/css/main.372a5197.css",
+    "main.js": "/portfolio-gabriel-pastore/static/js/main.ba48e48c.js",
     "static/js/453.1fa56f78.chunk.js": "/portfolio-gabriel-pastore/static/js/453.1fa56f78.chunk.js",
     "static/media/kira-queen-watermark.png": "/portfolio-gabriel-pastore/static/media/kira-queen-watermark.cfd8cb7c6cb6a264f1f7.png",
     "static/media/joshua-watermark.png": "/portfolio-gabriel-pastore/static/media/joshua-watermark.144b46ea1e364f0af281.png",
@@ -33,17 +33,18 @@
     "static/media/linkedin-bright.png": "/portfolio-gabriel-pastore/static/media/linkedin-bright.4e0f175540a90eca01d9.png",
     "static/media/fit-track.png": "/portfolio-gabriel-pastore/static/media/fit-track.545cc937626a319d4f57.png",
     "static/media/ImageEasy.png": "/portfolio-gabriel-pastore/static/media/ImageEasy.917ad129641eb5bb35cb.png",
+    "static/media/equacionando.png": "/portfolio-gabriel-pastore/static/media/equacionando.15f2e9d04e76c3a5a4d1.png",
     "index.html": "/portfolio-gabriel-pastore/index.html",
-    "static/media/menuStickLight.svg": "/portfolio-gabriel-pastore/static/media/menuStickLight.c4f03f6369942b342d51.svg",
-    "static/media/menuStickDark.svg": "/portfolio-gabriel-pastore/static/media/menuStickDark.50feb68f1653f34ae977.svg",
+    "static/media/menuStickLight.svg": "/portfolio-gabriel-pastore/static/media/menuStickLight.b6f2e99bc2ba0a9bf2e3.svg",
+    "static/media/menuStickDark.svg": "/portfolio-gabriel-pastore/static/media/menuStickDark.bc4d12b414d9065dd554.svg",
     "static/media/ArrowDark.svg": "/portfolio-gabriel-pastore/static/media/ArrowDark.1281c870e6756c17b6a5.svg",
-    "static/media/ArrowLight.svg": "/portfolio-gabriel-pastore/static/media/ArrowLight.2f4444f8fba2f8487fc9.svg",
-    "main.0a20220a.css.map": "/portfolio-gabriel-pastore/static/css/main.0a20220a.css.map",
-    "main.f552eb0c.js.map": "/portfolio-gabriel-pastore/static/js/main.f552eb0c.js.map",
+    "static/media/ArrowLight.svg": "/portfolio-gabriel-pastore/static/media/ArrowLight.2a136b5a71fa58395a29.svg",
+    "main.372a5197.css.map": "/portfolio-gabriel-pastore/static/css/main.372a5197.css.map",
+    "main.ba48e48c.js.map": "/portfolio-gabriel-pastore/static/js/main.ba48e48c.js.map",
     "453.1fa56f78.chunk.js.map": "/portfolio-gabriel-pastore/static/js/453.1fa56f78.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0a20220a.css",
-    "static/js/main.f552eb0c.js"
+    "static/css/main.372a5197.css",
+    "static/js/main.ba48e48c.js"
   ]
 }
