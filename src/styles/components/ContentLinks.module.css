@@ -63,7 +63,7 @@
     position: relative;
 }
 
-.drawImg:hover {
+.drawImg:hover, .drawImg:hover > .imgBox {
     aspect-ratio: 16 / 10;
 }
 
@@ -82,7 +82,6 @@
 }
 
 .drawImg:hover > .imgBox {
-    aspect-ratio: 16 / 10;
     opacity: 1;
     font-size: xx-large;
 }
@@ -172,6 +171,9 @@
     .flexDiv {
         grid-template-columns: auto;
     }
+    .drawImg:hover, .drawImg:hover > .imgBox {
+        aspect-ratio: 16 / 9;
+    }
     .drawImg, .imgBox {
         padding: 2rem;
         border-radius: 2rem;
@@ -185,12 +187,18 @@
             aspect-ratio: 2 / 1;
             font-size: larger;
         }
+        .drawImg:hover, .drawImg:hover > .imgBox {
+            aspect-ratio: 2 / 1;
+        }
     }
     @media (max-width: 700px) {
         .drawImg, .imgBox {
             width: 15rem;
             aspect-ratio: 1.5 / 1;
             font-size: medium;
+        }
+        .drawImg:hover, .drawImg:hover > .imgBox {
+            aspect-ratio: 1.5 / 1;
         }
     }
 }
